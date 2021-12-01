@@ -56,6 +56,9 @@ const postUserOpts = {
 
 const putUserOpts = {
   schema: {
+    params: {
+      id: typeString,
+    },
     body: {
       type: 'object',
       properties: {
