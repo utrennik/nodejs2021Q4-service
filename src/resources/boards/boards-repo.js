@@ -30,7 +30,7 @@ const updateBoard = async (id, newBoardData) => {
 
 const deleteBoard = async (id) => {
   const boardIndex = boards.findIndex((board) => board.id === id);
-  if (boardIndex !== 1) {
+  if (boardIndex !== -1) {
     boards.splice(boardIndex, 1);
     return true;
   }

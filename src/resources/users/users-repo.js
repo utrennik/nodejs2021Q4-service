@@ -30,7 +30,7 @@ const updateUser = async (id, newUserData) => {
 
 const deleteUser = async (id) => {
   const userIndex = users.findIndex((user) => user.id === id);
-  if (userIndex !== 1) {
+  if (userIndex !== -1) {
     users.splice(userIndex, 1);
     return true;
   }
