@@ -1,9 +1,23 @@
-const tasks = [];
+let tasks = [];
 
 const getTasksByBoardId = async (id) => {
-  const resultTasks = tasks.map((task) => task.boardId === id);
+  const resultTasks = tasks.filter((task) => task.boardId === id);
 
   return resultTasks.length === 0 ? null : resultTasks;
+};
+
+const deleteTasksByBoardId = async (id) => {
+  const newTasks = tasks.filter((task) => task.boardId !== id);
+  tasks = newTasks;
+};
+
+const unassignTasks = async (userId) => {
+  const newTasks = tasks.map((task) => {
+    if (task.userId === userId) return { ...task, userId: null };
+    return task;
+  });
+
+  tasks = newTasks;
 };
 
 const getTask = async (boardId, taskId) => {
@@ -55,4 +69,6 @@ module.exports = {
   postTask,
   updateTask,
   deleteTask,
+  deleteTasksByBoardId,
+  unassignTasks,
 };

@@ -1,4 +1,5 @@
-const boardsRepo = require("./boards-repo");
+const boardsRepo = require('./boards-repo');
+const { deleteTasksByBoardId } = require('../tasks/tasks-repo');
 const Board = require('./board-model');
 
 const getAllBoards = async (req, res) => {
@@ -41,7 +42,7 @@ const deleteBoard = async (req, res) => {
   const isDeleted = await boardsRepo.deleteBoard(id);
   if (!isDeleted)
     res.status(404).send(new Error(`Board with ID ${id} doesn't exist`));
-
+  await deleteTasksByBoardId(id);
   res.status(204).send();
 };
 

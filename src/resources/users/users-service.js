@@ -1,4 +1,5 @@
 const usersRepo = require('./users-repo');
+const { unassignTasks } = require('../tasks/tasks-repo');
 const User = require('./user-model');
 
 const getAllUsers = async (req, res) => {
@@ -40,6 +41,8 @@ const deleteUser = async (req, res) => {
   const isDeleted = await usersRepo.deleteUser(id);
   if (!isDeleted)
     res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
+
+  await unassignTasks(id);
 
   res.status(204).send();
 };

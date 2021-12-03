@@ -59,7 +59,7 @@ const postTaskOpts = {
     },
     body: {
       ...typeTask,
-      required: ['title', 'order', 'boardId', 'columnId'],
+      required: ['title', 'order'],
     },
     response: {
       201: typeTask,
