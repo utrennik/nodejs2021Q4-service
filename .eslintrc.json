@@ -6,6 +6,8 @@
     "jest": true,
     "node": true
   },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 2021,
@@ -20,9 +22,12 @@
     "eslint:recommended",
     "plugin:node/recommended",
     "airbnb-base",
-    "prettier"
+    "prettier",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "no-explicit-any": "on",
     "import/extensions": "off",
     "linebreak-style": "off",
     "node/no-unsupported-features/es-syntax": "off",
