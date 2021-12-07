@@ -1,10 +1,10 @@
-const {
+import {
   getTasksByBoardId,
   getTask,
   postTask,
   updateTask,
   deleteTask,
-} = require('./tasks-service');
+} from './tasks-service';
 
 const typeString = { type: 'string' };
 const typeStringOrNull = { type: ['string', 'null'] };
@@ -104,4 +104,4 @@ const tasksRouter = (fastify, options, done) => {
   done();
 };
 
-module.exports = tasksRouter;
+export default tasksRouter;

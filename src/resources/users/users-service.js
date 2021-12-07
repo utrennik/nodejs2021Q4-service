@@ -1,6 +1,6 @@
-const usersRepo = require('./users-repo');
-const { unassignTasks } = require('../tasks/tasks-repo');
-const User = require('./user-model');
+import tasksRepo from '../tasks/tasks-repo';
+import usersRepo from './users-repo';
+import { User } from './user-model';
 
 const getAllUsers = async (req, res) => {
   const allUsers = await usersRepo.getAllUsers();
@@ -42,9 +42,9 @@ const deleteUser = async (req, res) => {
   if (!isDeleted)
     res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
 
-  await unassignTasks(id);
+  await tasksRepo.unassignTasks(id);
 
   res.status(204).send();
 };
 
-module.exports = { getAllUsers, getUserByID, postUser, updateUser, deleteUser };
+export { getAllUsers, getUserByID, postUser, updateUser, deleteUser };

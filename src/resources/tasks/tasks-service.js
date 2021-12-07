@@ -1,6 +1,6 @@
-const tasksRepo = require('./tasks-repo');
-const boardsRepo = require('../boards/boards-repo');
-const Task = require('./tasks-model');
+import tasksRepo from './tasks-repo';
+import boardsRepo from '../boards/boards-repo';
+import { Task } from './tasks-model';
 
 const getTasksByBoardId = async (req, res) => {
   const { boardId } = req.params;
@@ -77,10 +77,4 @@ const deleteTask = async (req, res) => {
   res.status(204).send();
 };
 
-module.exports = {
-  getTasksByBoardId,
-  getTask,
-  postTask,
-  updateTask,
-  deleteTask,
-};
+export { getTasksByBoardId, getTask, postTask, updateTask, deleteTask };

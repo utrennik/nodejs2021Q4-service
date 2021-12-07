@@ -1,6 +1,6 @@
-const uuid = require('uuid');
+import * as uuid from 'uuid';
 
-class Task {
+export class Task {
   constructor({
     id = uuid.v4(),
     title = 'New Task',
@@ -19,5 +19,3 @@ class Task {
     this.columnId = columnId;
   }
 }
-
-module.exports = Task;

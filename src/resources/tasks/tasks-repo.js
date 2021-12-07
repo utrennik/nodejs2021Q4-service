@@ -63,7 +63,7 @@ const deleteTask = async (boardId, taskId) => {
   return false;
 };
 
-module.exports = {
+export default {
   getTasksByBoardId,
   getTask,
   postTask,

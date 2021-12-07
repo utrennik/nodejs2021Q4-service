@@ -1,10 +1,10 @@
-const {
+import {
   getAllUsers,
   getUserByID,
   postUser,
   updateUser,
   deleteUser,
-} = require('./users-service');
+} from './users-service';
 
 const typeString = { type: 'string' };
 const typeUser = {
@@ -94,4 +94,4 @@ const usersRouter = (fastify, options, done) => {
   done();
 };
 
-module.exports = usersRouter;
+export default usersRouter;
