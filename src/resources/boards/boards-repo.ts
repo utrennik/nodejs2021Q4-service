@@ -1,5 +1,5 @@
 import { IBoardData } from './types';
-import { Board } from './board-model';
+import Board from './board-model';
 
 const boards: Board[] = [];
 

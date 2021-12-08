@@ -1,4 +1,4 @@
-import { Column } from './columns-model';
+import Column from './columns-model';
 
 export interface IBoardData {
   title: string;

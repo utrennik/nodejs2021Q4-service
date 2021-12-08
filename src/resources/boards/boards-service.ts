@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply } from 'fastify';
 import boardsRepo from './boards-repo';
 import tasksRepo from '../tasks/tasks-repo';
-import { Board } from './board-model';
+import Board from './board-model';
 import {
   IGetBoardByIDRequest,
   IPostBoardRequest,

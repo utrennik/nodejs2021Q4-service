@@ -1,4 +1,9 @@
 import {
+  FastifyInstance,
+  FastifyPluginOptions,
+  FastifyPluginCallback,
+} from 'fastify';
+import {
   getTasksByBoardId,
   getTask,
   postTask,
@@ -95,7 +100,11 @@ const deleteTaskOpts = {
   handler: deleteTask,
 };
 
-const tasksRouter = (fastify, options, done) => {
+const tasksRouter: FastifyPluginCallback = (
+  fastify: FastifyInstance,
+  _: FastifyPluginOptions,
+  done
+) => {
   fastify.get('/:boardId/tasks', getTasksByIdOpts);
   fastify.get('/:boardId/tasks/:taskId', getTaskOpts);
   fastify.post('/:boardId/tasks', postTaskOpts);

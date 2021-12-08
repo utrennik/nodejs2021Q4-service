@@ -1,7 +1,7 @@
 import * as uuid from 'uuid';
-import { Task } from '../tasks/tasks-model';
+import Task from '../tasks/tasks-model';
 
-export class Column {
+export default class Column {
   id: string;
 
   title: string;

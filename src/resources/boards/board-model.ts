@@ -1,7 +1,7 @@
 import * as uuid from 'uuid';
-import { Column } from './columns-model';
+import Column from './columns-model';
 
-export class Board {
+export default class Board {
   id: string;
 
   title: string;
