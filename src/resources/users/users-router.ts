@@ -1,4 +1,9 @@
 import {
+  FastifyInstance,
+  FastifyPluginOptions,
+  FastifyPluginCallback,
+} from 'fastify';
+import {
   getAllUsers,
   getUserByID,
   postUser,
@@ -85,7 +90,11 @@ const deleteUserOpts = {
   handler: deleteUser,
 };
 
-const usersRouter = (fastify, options, done) => {
+const usersRouter: FastifyPluginCallback = (
+  fastify: FastifyInstance,
+  _: FastifyPluginOptions,
+  done
+) => {
   fastify.get('/', getAllUsersOpts);
   fastify.get('/:id', getUserOpts);
   fastify.post('/', postUserOpts);
