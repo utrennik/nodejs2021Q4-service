@@ -97,6 +97,12 @@ const deleteBoardOpts = {
   handler: deleteBoard,
 };
 
+/**
+ * Returns the Fastify Plugin Callback
+ * @param fastify Fastify Instance
+ * @param _ Fastify plugin options object
+ * @returns Fastify plugin callback
+ */
 const boardsRouter: FastifyPluginCallback = async (
   fastify: FastifyInstance,
   _: FastifyPluginOptions,

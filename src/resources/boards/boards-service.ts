@@ -10,6 +10,12 @@ import {
   IDeleteBoardRequest,
 } from './types';
 
+/**
+ * Sends all Boards to the client (Promise)
+ * @param req FastifyRequest (client request)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const getAllBoards = async (
   req: FastifyRequest,
   res: FastifyReply
@@ -18,6 +24,12 @@ const getAllBoards = async (
   res.send(allBoards);
 };
 
+/**
+ * Sends the Board by Board id to the client
+ * @param req FastifyRequest (client request with id param)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const getBoardByID = async (
   req: FastifyRequest<IGetBoardByIDRequest>,
   res: FastifyReply
@@ -31,6 +43,12 @@ const getBoardByID = async (
   res.send(board);
 };
 
+/**
+ * Posts the board from the client to the server
+ * @param req FastifyRequest (client request with board data)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const postBoard = async (
   req: FastifyRequest<IPostBoardRequest>,
   res: FastifyReply
@@ -44,6 +62,12 @@ const postBoard = async (
   res.status(201).send(createdBoard);
 };
 
+/**
+ * Updates the Board with data from the client
+ * @param req FastifyRequest (client request with id of the Board param and with Board data to update in body)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const updateBoard = async (
   req: FastifyRequest<IUpdateBoardRequest>,
   res: FastifyReply
@@ -61,6 +85,12 @@ const updateBoard = async (
   res.send(updatedBoard);
 };
 
+/**
+ * Deletes the Board by id
+ * @param req FastifyRequest (client request with id of the board param)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const deleteBoard = async (
   req: FastifyRequest<IDeleteBoardRequest>,
   res: FastifyReply
