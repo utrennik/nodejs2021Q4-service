@@ -11,6 +11,12 @@ import {
 } from './types';
 import Board from '../boards/board-model';
 
+/**
+ * Sends the Tasks by Board id to the client
+ * @param req FastifyRequest (client request with boardId param)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const getTasksByBoardId = async (
   req: FastifyRequest<IGetTasksByBoardIdRequest>,
   res: FastifyReply
@@ -26,6 +32,12 @@ const getTasksByBoardId = async (
   res.send(tasks);
 };
 
+/**
+ * Sends the Task by Board id and Task id to the client
+ * @param req FastifyRequest (client request with boardId and taskId params)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const getTask = async (
   req: FastifyRequest<IGetTaskRequest>,
   res: FastifyReply
@@ -46,6 +58,12 @@ const getTask = async (
   res.send(task);
 };
 
+/**
+ * Sends the new Task to the server
+ * @param req FastifyRequest (client request with boardId param and Task data object in the body)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const postTask = async (
   req: FastifyRequest<IPostTaskRequest>,
   res: FastifyReply
@@ -66,6 +84,12 @@ const postTask = async (
   res.status(201).send(createdTask);
 };
 
+/**
+ * Updates an existing Task on the server
+ * @param req FastifyRequest (client request with boardId and taskId params, and Task update data object in the body)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const updateTask = async (
   req: FastifyRequest<IUpdateTaskRequest>,
   res: FastifyReply
@@ -89,6 +113,12 @@ const updateTask = async (
   res.send(updatedTask);
 };
 
+/**
+ * Deletes the existing Task on the server
+ * @param req FastifyRequest (client request with boardId and taskId params)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const deleteTask = async (
   req: FastifyRequest<IDeleteTaskRequest>,
   res: FastifyReply

@@ -100,6 +100,12 @@ const deleteTaskOpts = {
   handler: deleteTask,
 };
 
+/**
+ * Returns the Fastify Plugin Callback
+ * @param fastify Fastify Instance
+ * @param _ Fastify plugin options object
+ * @returns Fastify plugin callback
+ */
 const tasksRouter: FastifyPluginCallback = (
   fastify: FastifyInstance,
   _: FastifyPluginOptions,
