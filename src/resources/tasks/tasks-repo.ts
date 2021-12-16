@@ -6,7 +6,7 @@ let tasks: Task[] = [];
 /**
  * Returns the Tasks by Board id
  * @param id Board id
- * @returns Tasks[] (Promise)
+ * @returns Array of Tasks or null if there are no Tasks (Promise)
  */
 const getTasksByBoardId = async (id: string): Promise<Task[] | null> => {
   const resultTasks: Task[] = tasks.filter((task) => task.boardId === id);

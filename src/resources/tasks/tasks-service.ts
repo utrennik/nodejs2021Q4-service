@@ -59,7 +59,7 @@ const getTask = async (
 };
 
 /**
- * Sends the new Task to the server
+ * Posts the new Task to the server
  * @param req FastifyRequest (client request with boardId param and Task data object in the body)
  * @param res FastifyReply (server reply)
  * @returns Promise<void>

@@ -45,7 +45,7 @@ const getBoardByID = async (
 
 /**
  * Posts the board from the client to the server
- * @param req FastifyRequest (client request with board data)
+ * @param req FastifyRequest (client request with board data body)
  * @param res FastifyReply (server reply)
  * @returns Promise<void>
  */

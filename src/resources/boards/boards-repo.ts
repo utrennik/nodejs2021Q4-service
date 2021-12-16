@@ -12,7 +12,7 @@ const getAllBoards = async (): Promise<Board[]> => boards;
 /**
  * Returns the Board by Board id
  * @param id Board id
- * @returns Board (Promise)
+ * @returns Board or null if not found (Promise)
  */
 const getBoardByID = async (id: string): Promise<Board | null> => {
   const resultBoard: Board | undefined = boards.find(
