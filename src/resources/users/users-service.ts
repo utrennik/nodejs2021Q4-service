@@ -10,11 +10,26 @@ import {
   IUserData,
 } from './types';
 
-const getAllUsers = async (req: FastifyRequest, res: FastifyReply) => {
+/**
+ * Sends all Users to the client
+ * @param req FastifyRequest
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
+const getAllUsers = async (
+  req: FastifyRequest,
+  res: FastifyReply
+): Promise<void> => {
   const allUsers = await usersRepo.getAllUsers();
   res.send(allUsers);
 };
 
+/**
+ * Sends the User by User id to the client
+ * @param req FastifyRequest (client request with id of the User param)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const getUserByID = async (
   req: FastifyRequest<IGetUserByIdRequest>,
   res: FastifyReply
@@ -29,6 +44,12 @@ const getUserByID = async (
   res.send(user);
 };
 
+/**
+ * Posts the new User to the server
+ * @param req FastifyRequest (client request with new User data object in the body)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const postUser = async (
   req: FastifyRequest<IPostUserRequest>,
   res: FastifyReply
@@ -39,6 +60,12 @@ const postUser = async (
   res.status(201).send(createdUser);
 };
 
+/**
+ * Updates an existing User on the server
+ * @param req FastifyRequest (client request with id of the User to get updated param and User update data object in the body)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const updateUser = async (
   req: FastifyRequest<IUpdateUserRequest>,
   res: FastifyReply
@@ -54,6 +81,12 @@ const updateUser = async (
   res.send(updatedUser);
 };
 
+/**
+ * Deletes the existing User on the server
+ * @param req FastifyRequest (client request with id of the User param)
+ * @param res FastifyReply (server reply)
+ * @returns Promise<void>
+ */
 const deleteUser = async (
   req: FastifyRequest<IDeleteUserRequest>,
   res: FastifyReply

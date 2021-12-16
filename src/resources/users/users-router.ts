@@ -90,6 +90,12 @@ const deleteUserOpts = {
   handler: deleteUser,
 };
 
+/**
+ * Returns the Fastify Plugin Callback (to work wits Users)
+ * @param fastify Fastify Instance
+ * @param _ Fastify plugin options object
+ * @returns Fastify plugin callback
+ */
 const usersRouter: FastifyPluginCallback = (
   fastify: FastifyInstance,
   _: FastifyPluginOptions,

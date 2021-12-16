@@ -33,7 +33,7 @@ const postBoard = async (board: Board): Promise<Board> => {
 
 /**
  * Updates a Board by id
- * @param id id of the Board to be updated
+ * @param id id of the Board to get updated
  * @param newBoardData data to update Board
  * @returns updated Board or null if not found (Promise)
  */
