@@ -37,8 +37,10 @@ const getBoardByID = async (
   const { id } = req.params;
 
   const board: Board | null = await boardsRepo.getBoardByID(id);
-  if (!board)
+  if (!board) {
     res.status(404).send(new Error(`Board with ID ${id} doesn't exist`));
+    return;
+  }
 
   res.send(board);
 };
@@ -79,8 +81,10 @@ const updateBoard = async (
     id,
     dataToUpdate
   );
-  if (!updatedBoard)
+  if (!updatedBoard) {
     res.status(404).send(new Error(`Board with ID ${id} doesn't exist`));
+    return;
+  }
 
   res.send(updatedBoard);
 };
@@ -99,8 +103,11 @@ const deleteBoard = async (
 
   const isDeleted: boolean = await boardsRepo.deleteBoard(id);
 
-  if (!isDeleted)
+  if (!isDeleted) {
     res.status(404).send(new Error(`Board with ID ${id} doesn't exist`));
+    return;
+  }
+
   await tasksRepo.deleteTasksByBoardId(id);
   res.status(204).send();
 };

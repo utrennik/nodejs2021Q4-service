@@ -24,10 +24,12 @@ const getTasksByBoardId = async (
   const { boardId } = req.params;
   const tasks: Task[] | null = await tasksRepo.getTasksByBoardId(boardId);
 
-  if (!tasks)
+  if (!tasks) {
     res
       .status(404)
       .send(new Error(`There are no tasks with board ID ${boardId}`));
+    return;
+  }
 
   res.send(tasks);
 };
@@ -46,7 +48,7 @@ const getTask = async (
 
   const task: Task | null = await tasksRepo.getTask(boardId, taskId);
 
-  if (!task)
+  if (!task) {
     res
       .status(404)
       .send(
@@ -54,6 +56,8 @@ const getTask = async (
           `Task with ID ${taskId} on board with ID ${boardId} not found!`
         )
       );
+    return;
+  }
 
   res.send(task);
 };
@@ -76,11 +80,11 @@ const postTask = async (
     task.boardId as string
   );
 
-  if (!board)
+  if (!board) {
     res.status(400).send(new Error(`Board with ID ${boardId} not found!`));
-
+    return;
+  }
   const createdTask: Task = await tasksRepo.postTask(task);
-
   res.status(201).send(createdTask);
 };
 
@@ -99,16 +103,21 @@ const updateTask = async (
 
   const board: Board | null = await boardsRepo.getBoardByID(boardId);
 
-  if (!board)
+  if (!board) {
     res.status(400).send(new Error(`Board with ID ${boardId} not found!`));
+    return;
+  }
 
   const updatedTask: Task | null = await tasksRepo.updateTask(
     boardId,
     taskId,
     dataToUpdate
   );
-  if (!updatedTask)
+
+  if (!updatedTask) {
     res.status(404).send(new Error(`Task with ID ${taskId} not found!`));
+    return;
+  }
 
   res.send(updatedTask);
 };
@@ -127,12 +136,17 @@ const deleteTask = async (
 
   const board: Board | null = await boardsRepo.getBoardByID(boardId);
 
-  if (!board)
+  if (!board) {
     res.status(400).send(new Error(`Board with ID ${boardId} not found!`));
+    return;
+  }
 
   const isDeleted: boolean = await tasksRepo.deleteTask(boardId, taskId);
-  if (!isDeleted)
+
+  if (!isDeleted) {
     res.status(404).send(new Error(`Task with ID ${taskId} doesn't exist`));
+    return;
+  }
 
   res.status(204).send();
 };

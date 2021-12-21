@@ -22,8 +22,8 @@ const config = {
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
   AUTH_MODE: process.env.AUTH_MODE === 'true',
   LOGGING_LEVEL: loggingLevels[loggingLevel as keyof object],
-  COMMON_LOG_FILE: './common_log.txt',
-  ERROR_LOG_FILE: './error_log.txt',
+  COMMON_LOG_FILE: '../common_log.txt',
+  ERROR_LOG_FILE: '../error_log.txt',
 };
 
 export default config;

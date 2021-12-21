@@ -38,9 +38,10 @@ const getUserByID = async (
 
   const user: User | null = await usersRepo.getUserByID(id);
 
-  if (!user)
+  if (!user) {
     res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
-
+    return;
+  }
   res.send(user);
 };
 
@@ -75,9 +76,10 @@ const updateUser = async (
 
   const updatedUser: User | null = await usersRepo.updateUser(id, dataToUpdate);
 
-  if (!updatedUser)
+  if (!updatedUser) {
     res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
-
+    return;
+  }
   res.send(updatedUser);
 };
 
@@ -95,11 +97,12 @@ const deleteUser = async (
 
   const isDeleted: boolean = await usersRepo.deleteUser(id);
 
-  if (!isDeleted)
+  if (!isDeleted) {
     res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
+    return;
+  }
 
   await tasksRepo.unassignTasks(id);
-
   res.status(204).send();
 };
 
