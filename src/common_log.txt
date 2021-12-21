@@ -1,0 +1,340 @@
+INFO: Server listening at http://127.0.0.1:4000
+INFO: Received request from URL: localhost:4000/users/, query params: {}, body: {"name":"Alex","login":"Utrennik"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/users/f7f29a19-0dcc-45ce-b501-8c1b32e0462b, query params: {"id":"f7f29a19-0dcc-45ce-b501-8c1b32e0462b"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/users/f7f29a19-0dcc-45ce-b501-8c1b32e0462b, query params: {"id":"f7f29a19-0dcc-45ce-b501-8c1b32e0462b"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/users/de5b69e6-9f3f-4e88-8de1-7117afc8ac2f, query params: {"id":"de5b69e6-9f3f-4e88-8de1-7117afc8ac2f"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/users/7249d04d-a300-4154-80e2-f4f9b268057e, query params: {"id":"7249d04d-a300-4154-80e2-f4f9b268057e"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"7249d04d-a300-4154-80e2-f4f9b268057e"}
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/users/7249d04d-a300-4154-80e2-f4f9b268057e, query params: {"id":"7249d04d-a300-4154-80e2-f4f9b268057e"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/users/7249d04d-a300-4154-80e2-f4f9b268057e, query params: {"id":"7249d04d-a300-4154-80e2-f4f9b268057e"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/users/38af4b23-0a70-4e57-9ba7-fe3ea4f80a01, query params: {"id":"38af4b23-0a70-4e57-9ba7-fe3ea4f80a01"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/ae2d4f0f-291e-4f75-b84d-654b6c16879f/tasks, query params: {"boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"18c2b6c6-10fb-4811-bc84-8874380bbe37","boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/ae2d4f0f-291e-4f75-b84d-654b6c16879f/tasks, query params: {"boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"18c2b6c6-10fb-4811-bc84-8874380bbe37","boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f"}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/users/18c2b6c6-10fb-4811-bc84-8874380bbe37, query params: {"id":"18c2b6c6-10fb-4811-bc84-8874380bbe37"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards/ae2d4f0f-291e-4f75-b84d-654b6c16879f/tasks/f9b0306b-425c-404f-b87b-67ef6f973506, query params: {"boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f","taskId":"f9b0306b-425c-404f-b87b-67ef6f973506"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/ae2d4f0f-291e-4f75-b84d-654b6c16879f/tasks/99692ead-1585-41c4-87d0-66b6c21f8bca, query params: {"boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f","taskId":"99692ead-1585-41c4-87d0-66b6c21f8bca"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/ae2d4f0f-291e-4f75-b84d-654b6c16879f/tasks/f9b0306b-425c-404f-b87b-67ef6f973506, query params: {"boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f","taskId":"f9b0306b-425c-404f-b87b-67ef6f973506"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards/ae2d4f0f-291e-4f75-b84d-654b6c16879f/tasks/99692ead-1585-41c4-87d0-66b6c21f8bca, query params: {"boardId":"ae2d4f0f-291e-4f75-b84d-654b6c16879f","taskId":"99692ead-1585-41c4-87d0-66b6c21f8bca"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards/ae2d4f0f-291e-4f75-b84d-654b6c16879f, query params: {"id":"ae2d4f0f-291e-4f75-b84d-654b6c16879f"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/155e5824-a7bf-4ea6-b445-fe60cf4df7c7, query params: {"id":"155e5824-a7bf-4ea6-b445-fe60cf4df7c7"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/1ea87c4c-aff7-4057-afd5-7d6d35d08baa, query params: {"id":"1ea87c4c-aff7-4057-afd5-7d6d35d08baa"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/1063b5b5-9ef9-4e6a-a7c3-3743f320a698, query params: {"id":"1063b5b5-9ef9-4e6a-a7c3-3743f320a698"}, body: {"id":"1063b5b5-9ef9-4e6a-a7c3-3743f320a698","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/1063b5b5-9ef9-4e6a-a7c3-3743f320a698, query params: {"id":"1063b5b5-9ef9-4e6a-a7c3-3743f320a698"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/1063b5b5-9ef9-4e6a-a7c3-3743f320a698, query params: {"id":"1063b5b5-9ef9-4e6a-a7c3-3743f320a698"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/d0ecaa3f-20dd-43a8-8b1a-8407cf6fe252, query params: {"id":"d0ecaa3f-20dd-43a8-8b1a-8407cf6fe252"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards/d0ecaa3f-20dd-43a8-8b1a-8407cf6fe252, query params: {"id":"d0ecaa3f-20dd-43a8-8b1a-8407cf6fe252"}, body: null
+INFO: Board with ID d0ecaa3f-20dd-43a8-8b1a-8407cf6fe252 doesn't exist
+    res: {
+      "statusCode": 404
+    }
+    err: {
+      "type": "Error",
+      "message": "Board with ID d0ecaa3f-20dd-43a8-8b1a-8407cf6fe252 doesn't exist",
+      "stack":
+          Error: Board with ID d0ecaa3f-20dd-43a8-8b1a-8407cf6fe252 doesn't exist
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:41:26
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    }
+WARN: Reply already sent
+    err: {
+      "type": "FastifyError",
+      "message": "Reply was already sent.",
+      "stack":
+          FastifyError: Reply was already sent.
+              at _Reply.Reply.send (D:\RSS\Tasks\nodejs2021Q4-service\node_modules\fastify\lib\reply.js:124:26)
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:43:7
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      "name": "FastifyError",
+      "code": "FST_ERR_REP_ALREADY_SENT",
+      "statusCode": 500
+    }
+INFO: Request completed with status code 404
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","userId":null,"columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","userId":null,"columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","userId":null,"columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","userId":null,"columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","userId":null,"columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/e2ba543d-d0b4-41b0-ae3d-267100474913, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"e2ba543d-d0b4-41b0-ae3d-267100474913"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/a5e46fa1-ce05-4227-9c98-9584a7b72d04, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"a5e46fa1-ce05-4227-9c98-9584a7b72d04"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/c8465913-ebc8-4978-bf44-204b70cafe8a, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"c8465913-ebc8-4978-bf44-204b70cafe8a"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/44e64620-91e1-4217-b1e3-870f9b3790dd, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"44e64620-91e1-4217-b1e3-870f9b3790dd"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/7bb5f0d0-4942-43ee-9815-3c4e74d03bc6, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"7bb5f0d0-4942-43ee-9815-3c4e74d03bc6"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a, query params: {"id":"c98df41d-11af-45ec-af92-9dcca9b2164a"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/e2ba543d-d0b4-41b0-ae3d-267100474913, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"e2ba543d-d0b4-41b0-ae3d-267100474913"}, body: null
+INFO: Task with ID e2ba543d-d0b4-41b0-ae3d-267100474913 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+    res: {
+      "statusCode": 404
+    }
+    err: {
+      "type": "Error",
+      "message": "Task with ID e2ba543d-d0b4-41b0-ae3d-267100474913 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!",
+      "stack":
+          Error: Task with ID e2ba543d-d0b4-41b0-ae3d-267100474913 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:53:9
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    }
+WARN: Reply already sent
+    err: {
+      "type": "FastifyError",
+      "message": "Reply was already sent.",
+      "stack":
+          FastifyError: Reply was already sent.
+              at _Reply.Reply.send (D:\RSS\Tasks\nodejs2021Q4-service\node_modules\fastify\lib\reply.js:124:26)
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:58:7
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      "name": "FastifyError",
+      "code": "FST_ERR_REP_ALREADY_SENT",
+      "statusCode": 500
+    }
+INFO: Request completed with status code 404
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/a5e46fa1-ce05-4227-9c98-9584a7b72d04, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"a5e46fa1-ce05-4227-9c98-9584a7b72d04"}, body: null
+INFO: Task with ID a5e46fa1-ce05-4227-9c98-9584a7b72d04 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+    res: {
+      "statusCode": 404
+    }
+    err: {
+      "type": "Error",
+      "message": "Task with ID a5e46fa1-ce05-4227-9c98-9584a7b72d04 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!",
+      "stack":
+          Error: Task with ID a5e46fa1-ce05-4227-9c98-9584a7b72d04 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:53:9
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    }
+WARN: Reply already sent
+    err: {
+      "type": "FastifyError",
+      "message": "Reply was already sent.",
+      "stack":
+          FastifyError: Reply was already sent.
+              at _Reply.Reply.send (D:\RSS\Tasks\nodejs2021Q4-service\node_modules\fastify\lib\reply.js:124:26)
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:58:7
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      "name": "FastifyError",
+      "code": "FST_ERR_REP_ALREADY_SENT",
+      "statusCode": 500
+    }
+INFO: Request completed with status code 404
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/c8465913-ebc8-4978-bf44-204b70cafe8a, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"c8465913-ebc8-4978-bf44-204b70cafe8a"}, body: null
+INFO: Task with ID c8465913-ebc8-4978-bf44-204b70cafe8a on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+    res: {
+      "statusCode": 404
+    }
+    err: {
+      "type": "Error",
+      "message": "Task with ID c8465913-ebc8-4978-bf44-204b70cafe8a on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!",
+      "stack":
+          Error: Task with ID c8465913-ebc8-4978-bf44-204b70cafe8a on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:53:9
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    }
+WARN: Reply already sent
+    err: {
+      "type": "FastifyError",
+      "message": "Reply was already sent.",
+      "stack":
+          FastifyError: Reply was already sent.
+              at _Reply.Reply.send (D:\RSS\Tasks\nodejs2021Q4-service\node_modules\fastify\lib\reply.js:124:26)
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:58:7
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      "name": "FastifyError",
+      "code": "FST_ERR_REP_ALREADY_SENT",
+      "statusCode": 500
+    }
+INFO: Request completed with status code 404
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/7bb5f0d0-4942-43ee-9815-3c4e74d03bc6, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"7bb5f0d0-4942-43ee-9815-3c4e74d03bc6"}, body: null
+INFO: Task with ID 7bb5f0d0-4942-43ee-9815-3c4e74d03bc6 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+    res: {
+      "statusCode": 404
+    }
+    err: {
+      "type": "Error",
+      "message": "Task with ID 7bb5f0d0-4942-43ee-9815-3c4e74d03bc6 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!",
+      "stack":
+          Error: Task with ID 7bb5f0d0-4942-43ee-9815-3c4e74d03bc6 on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:53:9
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    }
+WARN: Reply already sent
+    err: {
+      "type": "FastifyError",
+      "message": "Reply was already sent.",
+      "stack":
+          FastifyError: Reply was already sent.
+              at _Reply.Reply.send (D:\RSS\Tasks\nodejs2021Q4-service\node_modules\fastify\lib\reply.js:124:26)
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:58:7
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      "name": "FastifyError",
+      "code": "FST_ERR_REP_ALREADY_SENT",
+      "statusCode": 500
+    }
+INFO: Request completed with status code 404
+INFO: Received request from URL: localhost:4000/boards/c98df41d-11af-45ec-af92-9dcca9b2164a/tasks/44e64620-91e1-4217-b1e3-870f9b3790dd, query params: {"boardId":"c98df41d-11af-45ec-af92-9dcca9b2164a","taskId":"44e64620-91e1-4217-b1e3-870f9b3790dd"}, body: null
+INFO: Task with ID 44e64620-91e1-4217-b1e3-870f9b3790dd on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+    res: {
+      "statusCode": 404
+    }
+    err: {
+      "type": "Error",
+      "message": "Task with ID 44e64620-91e1-4217-b1e3-870f9b3790dd on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!",
+      "stack":
+          Error: Task with ID 44e64620-91e1-4217-b1e3-870f9b3790dd on board with ID c98df41d-11af-45ec-af92-9dcca9b2164a not found!
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:53:9
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    }
+WARN: Reply already sent
+    err: {
+      "type": "FastifyError",
+      "message": "Reply was already sent.",
+      "stack":
+          FastifyError: Reply was already sent.
+              at _Reply.Reply.send (D:\RSS\Tasks\nodejs2021Q4-service\node_modules\fastify\lib\reply.js:124:26)
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:58:7
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      "name": "FastifyError",
+      "code": "FST_ERR_REP_ALREADY_SENT",
+      "statusCode": 500
+    }
+INFO: Request completed with status code 404
+INFO: Received request from URL: localhost:4000/boards/155e5824-a7bf-4ea6-b445-fe60cf4df7c7, query params: {"id":"155e5824-a7bf-4ea6-b445-fe60cf4df7c7"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks/1bd1a918-2488-4c18-94e5-7fa4302f88f4, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","taskId":"1bd1a918-2488-4c18-94e5-7fa4302f88f4"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks/ec656d4d-af3d-4a29-ab6e-26a44ed2728e, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","taskId":"ec656d4d-af3d-4a29-ab6e-26a44ed2728e"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: Request completed with status code 201
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks/b5909cd5-02af-4ad7-9709-f1b70779029a, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","taskId":"b5909cd5-02af-4ad7-9709-f1b70779029a"}, body: {"id":"b5909cd5-02af-4ad7-9709-f1b70779029a","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","columnId":null}
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks/b5909cd5-02af-4ad7-9709-f1b70779029a, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","taskId":"b5909cd5-02af-4ad7-9709-f1b70779029a"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks/1bd1a918-2488-4c18-94e5-7fa4302f88f4, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","taskId":"1bd1a918-2488-4c18-94e5-7fa4302f88f4"}, body: null
+INFO: Request completed with status code 200
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks/1bd1a918-2488-4c18-94e5-7fa4302f88f4, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","taskId":"1bd1a918-2488-4c18-94e5-7fa4302f88f4"}, body: null
+INFO: Request completed with status code 204
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02/tasks/1bd1a918-2488-4c18-94e5-7fa4302f88f4, query params: {"boardId":"cffe697b-0ebe-4605-b653-eaea3c0acc02","taskId":"1bd1a918-2488-4c18-94e5-7fa4302f88f4"}, body: null
+INFO: Task with ID 1bd1a918-2488-4c18-94e5-7fa4302f88f4 on board with ID cffe697b-0ebe-4605-b653-eaea3c0acc02 not found!
+    res: {
+      "statusCode": 404
+    }
+    err: {
+      "type": "Error",
+      "message": "Task with ID 1bd1a918-2488-4c18-94e5-7fa4302f88f4 on board with ID cffe697b-0ebe-4605-b653-eaea3c0acc02 not found!",
+      "stack":
+          Error: Task with ID 1bd1a918-2488-4c18-94e5-7fa4302f88f4 on board with ID cffe697b-0ebe-4605-b653-eaea3c0acc02 not found!
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:53:9
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    }
+WARN: Reply already sent
+    err: {
+      "type": "FastifyError",
+      "message": "Reply was already sent.",
+      "stack":
+          FastifyError: Reply was already sent.
+              at _Reply.Reply.send (D:\RSS\Tasks\nodejs2021Q4-service\node_modules\fastify\lib\reply.js:124:26)
+              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:58:7
+              at Generator.next (<anonymous>)
+              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
+              at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      "name": "FastifyError",
+      "code": "FST_ERR_REP_ALREADY_SENT",
+      "statusCode": 500
+    }
+INFO: Request completed with status code 404
+INFO: Received request from URL: localhost:4000/boards/cffe697b-0ebe-4605-b653-eaea3c0acc02, query params: {"id":"cffe697b-0ebe-4605-b653-eaea3c0acc02"}, body: null
+INFO: Request completed with status code 204
