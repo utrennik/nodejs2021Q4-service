@@ -7,6 +7,7 @@ import logger from './logger';
 import config from './common/config';
 
 const logFilePath = path.resolve(__dirname, config.COMMON_LOG_FILE);
+const errorLogFilePath = path.resolve(__dirname, config.ERROR_LOG_FILE);
 
 const app = fastify({
   disableRequestLogging: true,
@@ -20,7 +21,10 @@ const app = fastify({
   },
 });
 
-logger(app);
+logger(app, errorLogFilePath);
+
+// Promise.reject(Error('Oops!'));
+// throw Error('Oops!');
 
 app.register(usersRouter, { prefix: '/users' });
 app.register(boardsRouter, { prefix: '/boards' });

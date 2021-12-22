@@ -1,233 +1,232 @@
-INFO: Server listening at http://127.0.0.1:4000
-INFO: Received request from URL: localhost:4000/users, query params: {}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/users/0da9a54f-40e1-4acc-8ec4-1def43b34fc9, query params: {"id":"0da9a54f-40e1-4acc-8ec4-1def43b34fc9"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/users/0da9a54f-40e1-4acc-8ec4-1def43b34fc9, query params: {"id":"0da9a54f-40e1-4acc-8ec4-1def43b34fc9"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/users/554fb697-cff3-458d-abf4-f158820273c4, query params: {"id":"554fb697-cff3-458d-abf4-f158820273c4"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/users/1c6d1959-6d84-4f55-b7b7-76d31fa33d7b, query params: {"id":"1c6d1959-6d84-4f55-b7b7-76d31fa33d7b"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"1c6d1959-6d84-4f55-b7b7-76d31fa33d7b"}
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/users/1c6d1959-6d84-4f55-b7b7-76d31fa33d7b, query params: {"id":"1c6d1959-6d84-4f55-b7b7-76d31fa33d7b"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/users/1c6d1959-6d84-4f55-b7b7-76d31fa33d7b, query params: {"id":"1c6d1959-6d84-4f55-b7b7-76d31fa33d7b"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/users/b8082e98-7142-478a-bfdb-60d531ab3bad, query params: {"id":"b8082e98-7142-478a-bfdb-60d531ab3bad"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/e75709fc-0acf-4003-88ea-5743ea049bba/tasks, query params: {"boardId":"e75709fc-0acf-4003-88ea-5743ea049bba"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"d2a95998-8e09-4019-a1e6-fc79693ac480","boardId":"e75709fc-0acf-4003-88ea-5743ea049bba"}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/e75709fc-0acf-4003-88ea-5743ea049bba/tasks, query params: {"boardId":"e75709fc-0acf-4003-88ea-5743ea049bba"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"d2a95998-8e09-4019-a1e6-fc79693ac480","boardId":"e75709fc-0acf-4003-88ea-5743ea049bba"}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/users/d2a95998-8e09-4019-a1e6-fc79693ac480, query params: {"id":"d2a95998-8e09-4019-a1e6-fc79693ac480"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards/e75709fc-0acf-4003-88ea-5743ea049bba/tasks/af672e84-9e30-40cf-9c02-e9d83115bc0b, query params: {"boardId":"e75709fc-0acf-4003-88ea-5743ea049bba","taskId":"af672e84-9e30-40cf-9c02-e9d83115bc0b"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/e75709fc-0acf-4003-88ea-5743ea049bba/tasks/4f3ac9d8-7070-46b9-a09e-0dcfb81eeff1, query params: {"boardId":"e75709fc-0acf-4003-88ea-5743ea049bba","taskId":"4f3ac9d8-7070-46b9-a09e-0dcfb81eeff1"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/e75709fc-0acf-4003-88ea-5743ea049bba/tasks/af672e84-9e30-40cf-9c02-e9d83115bc0b, query params: {"boardId":"e75709fc-0acf-4003-88ea-5743ea049bba","taskId":"af672e84-9e30-40cf-9c02-e9d83115bc0b"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards/e75709fc-0acf-4003-88ea-5743ea049bba/tasks/4f3ac9d8-7070-46b9-a09e-0dcfb81eeff1, query params: {"boardId":"e75709fc-0acf-4003-88ea-5743ea049bba","taskId":"4f3ac9d8-7070-46b9-a09e-0dcfb81eeff1"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards/e75709fc-0acf-4003-88ea-5743ea049bba, query params: {"id":"e75709fc-0acf-4003-88ea-5743ea049bba"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/f954d204-1bd9-45d0-bc63-021b2a1c473b, query params: {"id":"f954d204-1bd9-45d0-bc63-021b2a1c473b"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/90c740ad-6573-442c-b446-3c51e0d4ba42, query params: {"id":"90c740ad-6573-442c-b446-3c51e0d4ba42"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/20146dcf-c60b-4d5f-bd58-38380def05f1, query params: {"id":"20146dcf-c60b-4d5f-bd58-38380def05f1"}, body: {"id":"20146dcf-c60b-4d5f-bd58-38380def05f1","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/20146dcf-c60b-4d5f-bd58-38380def05f1, query params: {"id":"20146dcf-c60b-4d5f-bd58-38380def05f1"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/20146dcf-c60b-4d5f-bd58-38380def05f1, query params: {"id":"20146dcf-c60b-4d5f-bd58-38380def05f1"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/86ea98f5-1e3d-495a-b7eb-a61d3aad1f2a, query params: {"id":"86ea98f5-1e3d-495a-b7eb-a61d3aad1f2a"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards/86ea98f5-1e3d-495a-b7eb-a61d3aad1f2a, query params: {"id":"86ea98f5-1e3d-495a-b7eb-a61d3aad1f2a"}, body: null
-INFO: Board with ID 86ea98f5-1e3d-495a-b7eb-a61d3aad1f2a doesn't exist
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/449ffbdc-fa03-41de-80b1-6dc1577ed6f2, query params: {"id":"449ffbdc-fa03-41de-80b1-6dc1577ed6f2"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/d792dd80-52af-4209-9d8a-492a9d15c71c, query params: {"id":"d792dd80-52af-4209-9d8a-492a9d15c71c"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/dcfd230e-4eb7-458a-b538-a825b2c6564b, query params: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b"}, body: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/dcfd230e-4eb7-458a-b538-a825b2c6564b, query params: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/dcfd230e-4eb7-458a-b538-a825b2c6564b, query params: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/22656c1f-95e5-494a-a03f-ca7bf964466a, query params: {"id":"22656c1f-95e5-494a-a03f-ca7bf964466a"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/22656c1f-95e5-494a-a03f-ca7bf964466a, query params: {"id":"22656c1f-95e5-494a-a03f-ca7bf964466a"}, body: null
+INFO: Board with ID 22656c1f-95e5-494a-a03f-ca7bf964466a doesn't exist
     res: {
       "statusCode": 404
     }
     err: {
       "type": "Error",
-      "message": "Board with ID 86ea98f5-1e3d-495a-b7eb-a61d3aad1f2a doesn't exist",
+      "message": "Board with ID 22656c1f-95e5-494a-a03f-ca7bf964466a doesn't exist",
       "stack":
-          Error: Board with ID 86ea98f5-1e3d-495a-b7eb-a61d3aad1f2a doesn't exist
+          Error: Board with ID 22656c1f-95e5-494a-a03f-ca7bf964466a doesn't exist
               at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:41:26
               at Generator.next (<anonymous>)
               at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:5:58)
               at processTicksAndRejections (node:internal/process/task_queues:96:5)
     }
-INFO: Request completed with status code 404
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","userId":null,"columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","userId":null,"columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","userId":null,"columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","userId":null,"columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","userId":null,"columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/67ebb84c-d581-465b-b222-1f906007f607, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"67ebb84c-d581-465b-b222-1f906007f607"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/e1feb3ae-452a-4fee-96c0-9357fd746b75, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"e1feb3ae-452a-4fee-96c0-9357fd746b75"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/525f1e0e-eead-43ff-91da-259e54fdb36d, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"525f1e0e-eead-43ff-91da-259e54fdb36d"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/e17be099-1882-4aeb-aef9-bfcf30c60c3a, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"e17be099-1882-4aeb-aef9-bfcf30c60c3a"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/56bd0630-697c-4cb0-ac42-f7bdfb9d40ff, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"56bd0630-697c-4cb0-ac42-f7bdfb9d40ff"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e, query params: {"id":"356c5c7b-8bd3-4a76-8511-3651733fb11e"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/67ebb84c-d581-465b-b222-1f906007f607, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"67ebb84c-d581-465b-b222-1f906007f607"}, body: null
-INFO: Task with ID 67ebb84c-d581-465b-b222-1f906007f607 on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/c6c9cf14-bc03-4608-ba5d-f7d656f39c9e, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"c6c9cf14-bc03-4608-ba5d-f7d656f39c9e"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/1a5b286d-84da-48bd-8305-d9f621f848d3, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"1a5b286d-84da-48bd-8305-d9f621f848d3"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/0d557d16-2480-4467-87f1-2890df187d4f, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"0d557d16-2480-4467-87f1-2890df187d4f"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/811809d6-ca71-4624-aa08-3899dece8fa1, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"811809d6-ca71-4624-aa08-3899dece8fa1"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70, query params: {"id":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/1a5b286d-84da-48bd-8305-d9f621f848d3, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"1a5b286d-84da-48bd-8305-d9f621f848d3"}, body: null
+INFO: Task with ID 1a5b286d-84da-48bd-8305-d9f621f848d3 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
     res: {
       "statusCode": 404
     }
     err: {
       "type": "Error",
-      "message": "Task with ID 67ebb84c-d581-465b-b222-1f906007f607 on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!",
+      "message": "Task with ID 1a5b286d-84da-48bd-8305-d9f621f848d3 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
       "stack":
-          Error: Task with ID 67ebb84c-d581-465b-b222-1f906007f607 on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+          Error: Task with ID 1a5b286d-84da-48bd-8305-d9f621f848d3 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
               at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
               at Generator.next (<anonymous>)
               at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
               at processTicksAndRejections (node:internal/process/task_queues:96:5)
     }
-INFO: Request completed with status code 404
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/e1feb3ae-452a-4fee-96c0-9357fd746b75, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"e1feb3ae-452a-4fee-96c0-9357fd746b75"}, body: null
-INFO: Task with ID e1feb3ae-452a-4fee-96c0-9357fd746b75 on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/0d557d16-2480-4467-87f1-2890df187d4f, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"0d557d16-2480-4467-87f1-2890df187d4f"}, body: null
+INFO: Task with ID 0d557d16-2480-4467-87f1-2890df187d4f on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
     res: {
       "statusCode": 404
     }
     err: {
       "type": "Error",
-      "message": "Task with ID e1feb3ae-452a-4fee-96c0-9357fd746b75 on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!",
+      "message": "Task with ID 0d557d16-2480-4467-87f1-2890df187d4f on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
       "stack":
-          Error: Task with ID e1feb3ae-452a-4fee-96c0-9357fd746b75 on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+          Error: Task with ID 0d557d16-2480-4467-87f1-2890df187d4f on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
               at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
               at Generator.next (<anonymous>)
               at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
               at processTicksAndRejections (node:internal/process/task_queues:96:5)
     }
-INFO: Request completed with status code 404
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/e17be099-1882-4aeb-aef9-bfcf30c60c3a, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"e17be099-1882-4aeb-aef9-bfcf30c60c3a"}, body: null
-INFO: Task with ID e17be099-1882-4aeb-aef9-bfcf30c60c3a on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/811809d6-ca71-4624-aa08-3899dece8fa1, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"811809d6-ca71-4624-aa08-3899dece8fa1"}, body: null
+INFO: Task with ID 811809d6-ca71-4624-aa08-3899dece8fa1 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
     res: {
       "statusCode": 404
     }
     err: {
       "type": "Error",
-      "message": "Task with ID e17be099-1882-4aeb-aef9-bfcf30c60c3a on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!",
+      "message": "Task with ID 811809d6-ca71-4624-aa08-3899dece8fa1 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
       "stack":
-          Error: Task with ID e17be099-1882-4aeb-aef9-bfcf30c60c3a on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+          Error: Task with ID 811809d6-ca71-4624-aa08-3899dece8fa1 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
               at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
               at Generator.next (<anonymous>)
               at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
               at processTicksAndRejections (node:internal/process/task_queues:96:5)
     }
-INFO: Request completed with status code 404
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/56bd0630-697c-4cb0-ac42-f7bdfb9d40ff, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"56bd0630-697c-4cb0-ac42-f7bdfb9d40ff"}, body: null
-INFO: Task with ID 56bd0630-697c-4cb0-ac42-f7bdfb9d40ff on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/c6c9cf14-bc03-4608-ba5d-f7d656f39c9e, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"c6c9cf14-bc03-4608-ba5d-f7d656f39c9e"}, body: null
+INFO: Task with ID c6c9cf14-bc03-4608-ba5d-f7d656f39c9e on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
     res: {
       "statusCode": 404
     }
     err: {
       "type": "Error",
-      "message": "Task with ID 56bd0630-697c-4cb0-ac42-f7bdfb9d40ff on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!",
+      "message": "Task with ID c6c9cf14-bc03-4608-ba5d-f7d656f39c9e on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
       "stack":
-          Error: Task with ID 56bd0630-697c-4cb0-ac42-f7bdfb9d40ff on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+          Error: Task with ID c6c9cf14-bc03-4608-ba5d-f7d656f39c9e on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
               at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
               at Generator.next (<anonymous>)
               at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
               at processTicksAndRejections (node:internal/process/task_queues:96:5)
     }
-INFO: Request completed with status code 404
-INFO: Received request from URL: localhost:4000/boards/356c5c7b-8bd3-4a76-8511-3651733fb11e/tasks/525f1e0e-eead-43ff-91da-259e54fdb36d, query params: {"boardId":"356c5c7b-8bd3-4a76-8511-3651733fb11e","taskId":"525f1e0e-eead-43ff-91da-259e54fdb36d"}, body: null
-INFO: Task with ID 525f1e0e-eead-43ff-91da-259e54fdb36d on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2"}, body: null
+INFO: Task with ID 57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
     res: {
       "statusCode": 404
     }
     err: {
       "type": "Error",
-      "message": "Task with ID 525f1e0e-eead-43ff-91da-259e54fdb36d on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!",
+      "message": "Task with ID 57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
       "stack":
-          Error: Task with ID 525f1e0e-eead-43ff-91da-259e54fdb36d on board with ID 356c5c7b-8bd3-4a76-8511-3651733fb11e not found!
+          Error: Task with ID 57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
               at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
               at Generator.next (<anonymous>)
               at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
               at processTicksAndRejections (node:internal/process/task_queues:96:5)
     }
-INFO: Request completed with status code 404
-INFO: Received request from URL: localhost:4000/boards/f954d204-1bd9-45d0-bc63-021b2a1c473b, query params: {"id":"f954d204-1bd9-45d0-bc63-021b2a1c473b"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks/56ba05c9-272c-4b7c-af91-49ef2cfec305, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","taskId":"56ba05c9-272c-4b7c-af91-49ef2cfec305"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks/6e1c1253-3ece-41fd-93e7-b0fe74202816, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","taskId":"6e1c1253-3ece-41fd-93e7-b0fe74202816"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
-INFO: Request completed with status code 201
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks/44a95a1e-4043-4c96-a35b-e55cfc456239, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","taskId":"44a95a1e-4043-4c96-a35b-e55cfc456239"}, body: {"id":"44a95a1e-4043-4c96-a35b-e55cfc456239","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","columnId":null}
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks/44a95a1e-4043-4c96-a35b-e55cfc456239, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","taskId":"44a95a1e-4043-4c96-a35b-e55cfc456239"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks/56ba05c9-272c-4b7c-af91-49ef2cfec305, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","taskId":"56ba05c9-272c-4b7c-af91-49ef2cfec305"}, body: null
-INFO: Request completed with status code 200
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks/56ba05c9-272c-4b7c-af91-49ef2cfec305, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","taskId":"56ba05c9-272c-4b7c-af91-49ef2cfec305"}, body: null
-INFO: Request completed with status code 204
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045/tasks/56ba05c9-272c-4b7c-af91-49ef2cfec305, query params: {"boardId":"27512dfc-9271-440e-9a83-81fc3844a045","taskId":"56ba05c9-272c-4b7c-af91-49ef2cfec305"}, body: null
-INFO: Task with ID 56ba05c9-272c-4b7c-af91-49ef2cfec305 on board with ID 27512dfc-9271-440e-9a83-81fc3844a045 not found!
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
+INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/449ffbdc-fa03-41de-80b1-6dc1577ed6f2, query params: {"id":"449ffbdc-fa03-41de-80b1-6dc1577ed6f2"}, body: null
+INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/e3d7fd85-1350-4df6-853a-99675147de31, query params: {"id":"e3d7fd85-1350-4df6-853a-99675147de31"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/e3d7fd85-1350-4df6-853a-99675147de31, query params: {"id":"e3d7fd85-1350-4df6-853a-99675147de31"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/c6b960a5-0aac-40fb-a2f7-77bf154b3b9b, query params: {"id":"c6b960a5-0aac-40fb-a2f7-77bf154b3b9b"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/93899163-b4bd-4fc5-9865-ac4d699ba86b, query params: {"id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/93899163-b4bd-4fc5-9865-ac4d699ba86b, query params: {"id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/93899163-b4bd-4fc5-9865-ac4d699ba86b, query params: {"id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/2ec7cc56-773e-4756-b6a0-3fa8e03a2326, query params: {"id":"2ec7cc56-773e-4756-b6a0-3fa8e03a2326"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5d2d3ada-99b1-40d1-98e2-75effec39c18","boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5d2d3ada-99b1-40d1-98e2-75effec39c18","boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/5d2d3ada-99b1-40d1-98e2-75effec39c18, query params: {"id":"5d2d3ada-99b1-40d1-98e2-75effec39c18"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/cbd0de4f-93e9-462a-9647-fe41e927556f, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"cbd0de4f-93e9-462a-9647-fe41e927556f"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/cbd0de4f-93e9-462a-9647-fe41e927556f, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"cbd0de4f-93e9-462a-9647-fe41e927556f"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27, query params: {"id":"4bdf6b04-a95a-44e4-944c-d5919707de27"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/0f1ec3f7-aaf2-47da-ae89-514464c0682c, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"0f1ec3f7-aaf2-47da-ae89-514464c0682c"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/2d9a48d3-fe0c-40f3-871a-07e7d3da1134, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"2d9a48d3-fe0c-40f3-871a-07e7d3da1134"}, body: {"id":"2d9a48d3-fe0c-40f3-871a-07e7d3da1134","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","columnId":null}
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/2d9a48d3-fe0c-40f3-871a-07e7d3da1134, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"2d9a48d3-fe0c-40f3-871a-07e7d3da1134"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
+INFO: Task with ID b94b4f89-5339-4af1-963b-20f1a6095e91 on board with ID 58ae5b49-049e-4d86-b801-e9640facf013 not found!
     res: {
       "statusCode": 404
     }
     err: {
       "type": "Error",
-      "message": "Task with ID 56ba05c9-272c-4b7c-af91-49ef2cfec305 on board with ID 27512dfc-9271-440e-9a83-81fc3844a045 not found!",
+      "message": "Task with ID b94b4f89-5339-4af1-963b-20f1a6095e91 on board with ID 58ae5b49-049e-4d86-b801-e9640facf013 not found!",
       "stack":
-          Error: Task with ID 56ba05c9-272c-4b7c-af91-49ef2cfec305 on board with ID 27512dfc-9271-440e-9a83-81fc3844a045 not found!
+          Error: Task with ID b94b4f89-5339-4af1-963b-20f1a6095e91 on board with ID 58ae5b49-049e-4d86-b801-e9640facf013 not found!
               at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
               at Generator.next (<anonymous>)
               at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
               at processTicksAndRejections (node:internal/process/task_queues:96:5)
     }
-INFO: Request completed with status code 404
-INFO: Received request from URL: localhost:4000/boards/27512dfc-9271-440e-9a83-81fc3844a045, query params: {"id":"27512dfc-9271-440e-9a83-81fc3844a045"}, body: null
-INFO: Request completed with status code 204
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 404
+INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013, query params: {"id":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: null
+INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204

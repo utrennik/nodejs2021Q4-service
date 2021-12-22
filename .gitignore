@@ -1,3 +1,4 @@
 node_modules
 build
-./common_log.txt
+common_log.txt
+error_log.txt
