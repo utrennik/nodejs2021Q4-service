@@ -9,6 +9,10 @@ import {
   IBoardData,
   IDeleteBoardRequest,
 } from './types';
+import ClientError from '../../errors/client-error';
+import config from '../../common/config';
+
+const codes = config.HTTP_CODES;
 
 /**
  * Sends all Boards to the client (Promise)
@@ -38,8 +42,7 @@ const getBoardByID = async (
 
   const board: Board | null = await boardsRepo.getBoardByID(id);
   if (!board) {
-    res.status(404).send(new Error(`Board with ID ${id} doesn't exist`));
-    return;
+    throw new ClientError(`Board with ID ${id} doesn't exist`, 404);
   }
 
   res.send(board);
@@ -61,7 +64,7 @@ const postBoard = async (
 
   const createdBoard = await boardsRepo.postBoard(board);
 
-  res.status(201).send(createdBoard);
+  res.status(codes.CREATED).send(createdBoard);
 };
 
 /**
@@ -81,9 +84,9 @@ const updateBoard = async (
     id,
     dataToUpdate
   );
+
   if (!updatedBoard) {
-    res.status(404).send(new Error(`Board with ID ${id} doesn't exist`));
-    return;
+    throw new ClientError(`Board with ID ${id} doesn't exist`, codes.NOT_FOUND);
   }
 
   res.send(updatedBoard);
@@ -104,12 +107,11 @@ const deleteBoard = async (
   const isDeleted: boolean = await boardsRepo.deleteBoard(id);
 
   if (!isDeleted) {
-    res.status(404).send(new Error(`Board with ID ${id} doesn't exist`));
-    return;
+    throw new ClientError(`Board with ID ${id} doesn't exist`);
   }
 
   await tasksRepo.deleteTasksByBoardId(id);
-  res.status(204).send();
+  res.status(codes.NO_CONTENT).send();
 };
 
 export { getAllBoards, getBoardByID, postBoard, updateBoard, deleteBoard };

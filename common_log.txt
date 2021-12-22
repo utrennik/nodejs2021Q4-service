@@ -1,232 +1,806 @@
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/449ffbdc-fa03-41de-80b1-6dc1577ed6f2, query params: {"id":"449ffbdc-fa03-41de-80b1-6dc1577ed6f2"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/d792dd80-52af-4209-9d8a-492a9d15c71c, query params: {"id":"d792dd80-52af-4209-9d8a-492a9d15c71c"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/dcfd230e-4eb7-458a-b538-a825b2c6564b, query params: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b"}, body: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/dcfd230e-4eb7-458a-b538-a825b2c6564b, query params: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/dcfd230e-4eb7-458a-b538-a825b2c6564b, query params: {"id":"dcfd230e-4eb7-458a-b538-a825b2c6564b"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/22656c1f-95e5-494a-a03f-ca7bf964466a, query params: {"id":"22656c1f-95e5-494a-a03f-ca7bf964466a"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/22656c1f-95e5-494a-a03f-ca7bf964466a, query params: {"id":"22656c1f-95e5-494a-a03f-ca7bf964466a"}, body: null
-INFO: Board with ID 22656c1f-95e5-494a-a03f-ca7bf964466a doesn't exist
-    res: {
-      "statusCode": 404
-    }
-    err: {
-      "type": "Error",
-      "message": "Board with ID 22656c1f-95e5-494a-a03f-ca7bf964466a doesn't exist",
-      "stack":
-          Error: Board with ID 22656c1f-95e5-494a-a03f-ca7bf964466a doesn't exist
-              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:41:26
-              at Generator.next (<anonymous>)
-              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\boards\boards-service.ts:5:58)
-              at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    }
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","userId":null,"columnId":null}
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/c6c9cf14-bc03-4608-ba5d-f7d656f39c9e, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"c6c9cf14-bc03-4608-ba5d-f7d656f39c9e"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/1a5b286d-84da-48bd-8305-d9f621f848d3, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"1a5b286d-84da-48bd-8305-d9f621f848d3"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/0d557d16-2480-4467-87f1-2890df187d4f, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"0d557d16-2480-4467-87f1-2890df187d4f"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/811809d6-ca71-4624-aa08-3899dece8fa1, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"811809d6-ca71-4624-aa08-3899dece8fa1"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70, query params: {"id":"62b79226-d60d-4920-b1ab-0d5c56745a70"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/1a5b286d-84da-48bd-8305-d9f621f848d3, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"1a5b286d-84da-48bd-8305-d9f621f848d3"}, body: null
-INFO: Task with ID 1a5b286d-84da-48bd-8305-d9f621f848d3 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-    res: {
-      "statusCode": 404
-    }
-    err: {
-      "type": "Error",
-      "message": "Task with ID 1a5b286d-84da-48bd-8305-d9f621f848d3 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
-      "stack":
-          Error: Task with ID 1a5b286d-84da-48bd-8305-d9f621f848d3 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
-              at Generator.next (<anonymous>)
-              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
-              at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    }
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/0d557d16-2480-4467-87f1-2890df187d4f, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"0d557d16-2480-4467-87f1-2890df187d4f"}, body: null
-INFO: Task with ID 0d557d16-2480-4467-87f1-2890df187d4f on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-    res: {
-      "statusCode": 404
-    }
-    err: {
-      "type": "Error",
-      "message": "Task with ID 0d557d16-2480-4467-87f1-2890df187d4f on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
-      "stack":
-          Error: Task with ID 0d557d16-2480-4467-87f1-2890df187d4f on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
-              at Generator.next (<anonymous>)
-              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
-              at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    }
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/811809d6-ca71-4624-aa08-3899dece8fa1, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"811809d6-ca71-4624-aa08-3899dece8fa1"}, body: null
-INFO: Task with ID 811809d6-ca71-4624-aa08-3899dece8fa1 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-    res: {
-      "statusCode": 404
-    }
-    err: {
-      "type": "Error",
-      "message": "Task with ID 811809d6-ca71-4624-aa08-3899dece8fa1 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
-      "stack":
-          Error: Task with ID 811809d6-ca71-4624-aa08-3899dece8fa1 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
-              at Generator.next (<anonymous>)
-              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
-              at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    }
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/c6c9cf14-bc03-4608-ba5d-f7d656f39c9e, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"c6c9cf14-bc03-4608-ba5d-f7d656f39c9e"}, body: null
-INFO: Task with ID c6c9cf14-bc03-4608-ba5d-f7d656f39c9e on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-    res: {
-      "statusCode": 404
-    }
-    err: {
-      "type": "Error",
-      "message": "Task with ID c6c9cf14-bc03-4608-ba5d-f7d656f39c9e on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
-      "stack":
-          Error: Task with ID c6c9cf14-bc03-4608-ba5d-f7d656f39c9e on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
-              at Generator.next (<anonymous>)
-              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
-              at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    }
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/62b79226-d60d-4920-b1ab-0d5c56745a70/tasks/57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2, query params: {"boardId":"62b79226-d60d-4920-b1ab-0d5c56745a70","taskId":"57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2"}, body: null
-INFO: Task with ID 57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-    res: {
-      "statusCode": 404
-    }
-    err: {
-      "type": "Error",
-      "message": "Task with ID 57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!",
-      "stack":
-          Error: Task with ID 57f5fb0c-043f-4af0-ac4c-ff8bd1a8b1a2 on board with ID 62b79226-d60d-4920-b1ab-0d5c56745a70 not found!
-              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
-              at Generator.next (<anonymous>)
-              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
-              at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    }
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 404
-INFO: 12/22/2021, 12:57:54 PM Received request from URL: localhost:4000/boards/449ffbdc-fa03-41de-80b1-6dc1577ed6f2, query params: {"id":"449ffbdc-fa03-41de-80b1-6dc1577ed6f2"}, body: null
-INFO: 12/22/2021, 12:57:54 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/e3d7fd85-1350-4df6-853a-99675147de31, query params: {"id":"e3d7fd85-1350-4df6-853a-99675147de31"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/e3d7fd85-1350-4df6-853a-99675147de31, query params: {"id":"e3d7fd85-1350-4df6-853a-99675147de31"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/c6b960a5-0aac-40fb-a2f7-77bf154b3b9b, query params: {"id":"c6b960a5-0aac-40fb-a2f7-77bf154b3b9b"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/93899163-b4bd-4fc5-9865-ac4d699ba86b, query params: {"id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/93899163-b4bd-4fc5-9865-ac4d699ba86b, query params: {"id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/93899163-b4bd-4fc5-9865-ac4d699ba86b, query params: {"id":"93899163-b4bd-4fc5-9865-ac4d699ba86b"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/2ec7cc56-773e-4756-b6a0-3fa8e03a2326, query params: {"id":"2ec7cc56-773e-4756-b6a0-3fa8e03a2326"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5d2d3ada-99b1-40d1-98e2-75effec39c18","boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5d2d3ada-99b1-40d1-98e2-75effec39c18","boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27"}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/users/5d2d3ada-99b1-40d1-98e2-75effec39c18, query params: {"id":"5d2d3ada-99b1-40d1-98e2-75effec39c18"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/cbd0de4f-93e9-462a-9647-fe41e927556f, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"cbd0de4f-93e9-462a-9647-fe41e927556f"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"11a7bcb1-7e36-4b2f-aba9-a20d6d57d5e1"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27/tasks/cbd0de4f-93e9-462a-9647-fe41e927556f, query params: {"boardId":"4bdf6b04-a95a-44e4-944c-d5919707de27","taskId":"cbd0de4f-93e9-462a-9647-fe41e927556f"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/4bdf6b04-a95a-44e4-944c-d5919707de27, query params: {"id":"4bdf6b04-a95a-44e4-944c-d5919707de27"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/0f1ec3f7-aaf2-47da-ae89-514464c0682c, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"0f1ec3f7-aaf2-47da-ae89-514464c0682c"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 201
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/2d9a48d3-fe0c-40f3-871a-07e7d3da1134, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"2d9a48d3-fe0c-40f3-871a-07e7d3da1134"}, body: {"id":"2d9a48d3-fe0c-40f3-871a-07e7d3da1134","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","columnId":null}
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/2d9a48d3-fe0c-40f3-871a-07e7d3da1134, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"2d9a48d3-fe0c-40f3-871a-07e7d3da1134"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 200
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013/tasks/b94b4f89-5339-4af1-963b-20f1a6095e91, query params: {"boardId":"58ae5b49-049e-4d86-b801-e9640facf013","taskId":"b94b4f89-5339-4af1-963b-20f1a6095e91"}, body: null
-INFO: Task with ID b94b4f89-5339-4af1-963b-20f1a6095e91 on board with ID 58ae5b49-049e-4d86-b801-e9640facf013 not found!
-    res: {
-      "statusCode": 404
-    }
-    err: {
-      "type": "Error",
-      "message": "Task with ID b94b4f89-5339-4af1-963b-20f1a6095e91 on board with ID 58ae5b49-049e-4d86-b801-e9640facf013 not found!",
-      "stack":
-          Error: Task with ID b94b4f89-5339-4af1-963b-20f1a6095e91 on board with ID 58ae5b49-049e-4d86-b801-e9640facf013 not found!
-              at D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:55:9
-              at Generator.next (<anonymous>)
-              at fulfilled (D:\RSS\Tasks\nodejs2021Q4-service\src\resources\tasks\tasks-service.ts:5:58)
-              at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    }
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 404
-INFO: 12/22/2021, 12:57:55 PM Received request from URL: localhost:4000/boards/58ae5b49-049e-4d86-b801-e9640facf013, query params: {"id":"58ae5b49-049e-4d86-b801-e9640facf013"}, body: null
-INFO: 12/22/2021, 12:57:55 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/e8bf10da-7669-4c08-8a28-c2a39fea6b34, query params: {"id":"e8bf10da-7669-4c08-8a28-c2a39fea6b34"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/e8bf10da-7669-4c08-8a28-c2a39fea6b34, query params: {"id":"e8bf10da-7669-4c08-8a28-c2a39fea6b34"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/5d34f1ee-402f-4ccd-ba0a-fbbb789670e3, query params: {"id":"5d34f1ee-402f-4ccd-ba0a-fbbb789670e3"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/7031d419-6b36-4b31-afed-a79100679bd7, query params: {"id":"7031d419-6b36-4b31-afed-a79100679bd7"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"7031d419-6b36-4b31-afed-a79100679bd7"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/7031d419-6b36-4b31-afed-a79100679bd7, query params: {"id":"7031d419-6b36-4b31-afed-a79100679bd7"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/7031d419-6b36-4b31-afed-a79100679bd7, query params: {"id":"7031d419-6b36-4b31-afed-a79100679bd7"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/47be557f-1616-4afa-8fe2-74475e4a7188, query params: {"id":"47be557f-1616-4afa-8fe2-74475e4a7188"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba/tasks, query params: {"boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"d25f1788-8aec-473c-acab-416a180fda0c","boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba/tasks, query params: {"boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"d25f1788-8aec-473c-acab-416a180fda0c","boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba"}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/users/d25f1788-8aec-473c-acab-416a180fda0c, query params: {"id":"d25f1788-8aec-473c-acab-416a180fda0c"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba/tasks/6950ea0e-bc3e-4c8b-b39b-6c9ecab2c6ee, query params: {"boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba","taskId":"6950ea0e-bc3e-4c8b-b39b-6c9ecab2c6ee"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba/tasks/ec63dcb9-4686-4031-b44d-71a002f42a2d, query params: {"boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba","taskId":"ec63dcb9-4686-4031-b44d-71a002f42a2d"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba/tasks/6950ea0e-bc3e-4c8b-b39b-6c9ecab2c6ee, query params: {"boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba","taskId":"6950ea0e-bc3e-4c8b-b39b-6c9ecab2c6ee"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba/tasks/ec63dcb9-4686-4031-b44d-71a002f42a2d, query params: {"boardId":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba","taskId":"ec63dcb9-4686-4031-b44d-71a002f42a2d"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba, query params: {"id":"ebf6bcc3-b0dc-42af-b5b4-c4aa6d53f9ba"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/b21f5ab1-cae0-410c-b99a-dde0eddf188d, query params: {"id":"b21f5ab1-cae0-410c-b99a-dde0eddf188d"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/1ce99dc0-41d9-4a12-a978-56265f71b216, query params: {"id":"1ce99dc0-41d9-4a12-a978-56265f71b216"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/4645ef44-0815-4095-92ca-2ea3733b0d67, query params: {"id":"4645ef44-0815-4095-92ca-2ea3733b0d67"}, body: {"id":"4645ef44-0815-4095-92ca-2ea3733b0d67","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/4645ef44-0815-4095-92ca-2ea3733b0d67, query params: {"id":"4645ef44-0815-4095-92ca-2ea3733b0d67"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/4645ef44-0815-4095-92ca-2ea3733b0d67, query params: {"id":"4645ef44-0815-4095-92ca-2ea3733b0d67"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/d728a73a-4f84-4fa8-bbec-404152a93322, query params: {"id":"d728a73a-4f84-4fa8-bbec-404152a93322"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/d728a73a-4f84-4fa8-bbec-404152a93322, query params: {"id":"d728a73a-4f84-4fa8-bbec-404152a93322"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/d9c3578a-3f77-4176-be7d-e5cf566e9ec3, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"d9c3578a-3f77-4176-be7d-e5cf566e9ec3"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/0770d4d0-92d2-4b33-9243-60454c127952, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"0770d4d0-92d2-4b33-9243-60454c127952"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/f9d32b4f-df8e-4326-a222-93b24e1155c7, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"f9d32b4f-df8e-4326-a222-93b24e1155c7"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/bce260af-1991-418e-9c8a-7e9b234fc8ac, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"bce260af-1991-418e-9c8a-7e9b234fc8ac"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/7461b8de-c761-4fd9-8930-c3bc35c4e714, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"7461b8de-c761-4fd9-8930-c3bc35c4e714"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57, query params: {"id":"0d461449-af9e-4b5c-8d30-812043ed3b57"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/d9c3578a-3f77-4176-be7d-e5cf566e9ec3, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"d9c3578a-3f77-4176-be7d-e5cf566e9ec3"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/0770d4d0-92d2-4b33-9243-60454c127952, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"0770d4d0-92d2-4b33-9243-60454c127952"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/f9d32b4f-df8e-4326-a222-93b24e1155c7, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"f9d32b4f-df8e-4326-a222-93b24e1155c7"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/bce260af-1991-418e-9c8a-7e9b234fc8ac, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"bce260af-1991-418e-9c8a-7e9b234fc8ac"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/0d461449-af9e-4b5c-8d30-812043ed3b57/tasks/7461b8de-c761-4fd9-8930-c3bc35c4e714, query params: {"boardId":"0d461449-af9e-4b5c-8d30-812043ed3b57","taskId":"7461b8de-c761-4fd9-8930-c3bc35c4e714"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/b21f5ab1-cae0-410c-b99a-dde0eddf188d, query params: {"id":"b21f5ab1-cae0-410c-b99a-dde0eddf188d"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks/ce607956-e4d2-4278-b987-17fce4a82085, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","taskId":"ce607956-e4d2-4278-b987-17fce4a82085"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks/df54faa0-5275-42bb-bdb3-4cb86b41caca, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","taskId":"df54faa0-5275-42bb-bdb3-4cb86b41caca"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks/1ac46a27-d5f5-4d7e-9598-9bb55410adde, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","taskId":"1ac46a27-d5f5-4d7e-9598-9bb55410adde"}, body: {"id":"1ac46a27-d5f5-4d7e-9598-9bb55410adde","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","columnId":null}
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks/1ac46a27-d5f5-4d7e-9598-9bb55410adde, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","taskId":"1ac46a27-d5f5-4d7e-9598-9bb55410adde"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks/ce607956-e4d2-4278-b987-17fce4a82085, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","taskId":"ce607956-e4d2-4278-b987-17fce4a82085"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks/ce607956-e4d2-4278-b987-17fce4a82085, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","taskId":"ce607956-e4d2-4278-b987-17fce4a82085"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e/tasks/ce607956-e4d2-4278-b987-17fce4a82085, query params: {"boardId":"00e45b02-cf79-47f3-86e6-900b7c887c5e","taskId":"ce607956-e4d2-4278-b987-17fce4a82085"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:22:59 PM Received request from URL: localhost:4000/boards/00e45b02-cf79-47f3-86e6-900b7c887c5e, query params: {"id":"00e45b02-cf79-47f3-86e6-900b7c887c5e"}, body: null
+INFO: 12/22/2021, 5:22:59 PM Request completed with status code 204
+INFO: Server listening at http://127.0.0.1:4000
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/addd09b9-5ad3-4345-94cc-e038bade1a21, query params: {"id":"addd09b9-5ad3-4345-94cc-e038bade1a21"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/addd09b9-5ad3-4345-94cc-e038bade1a21, query params: {"id":"addd09b9-5ad3-4345-94cc-e038bade1a21"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/23a378eb-dce1-4072-9452-7c102ea6ab2f, query params: {"id":"23a378eb-dce1-4072-9452-7c102ea6ab2f"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/2a663b51-3184-4258-b7fe-487eaf62f57b, query params: {"id":"2a663b51-3184-4258-b7fe-487eaf62f57b"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"2a663b51-3184-4258-b7fe-487eaf62f57b"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/2a663b51-3184-4258-b7fe-487eaf62f57b, query params: {"id":"2a663b51-3184-4258-b7fe-487eaf62f57b"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/2a663b51-3184-4258-b7fe-487eaf62f57b, query params: {"id":"2a663b51-3184-4258-b7fe-487eaf62f57b"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/6fd4c80d-0e6b-4152-9760-a31378d31032, query params: {"id":"6fd4c80d-0e6b-4152-9760-a31378d31032"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/f09fc829-c980-48aa-be44-4c243247c260/tasks, query params: {"boardId":"f09fc829-c980-48aa-be44-4c243247c260"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"8f92e93f-b771-4485-a0b1-024d942e2c1f","boardId":"f09fc829-c980-48aa-be44-4c243247c260"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/f09fc829-c980-48aa-be44-4c243247c260/tasks, query params: {"boardId":"f09fc829-c980-48aa-be44-4c243247c260"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"8f92e93f-b771-4485-a0b1-024d942e2c1f","boardId":"f09fc829-c980-48aa-be44-4c243247c260"}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/users/8f92e93f-b771-4485-a0b1-024d942e2c1f, query params: {"id":"8f92e93f-b771-4485-a0b1-024d942e2c1f"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/f09fc829-c980-48aa-be44-4c243247c260/tasks/e51a1810-b0a7-4b9f-8a20-78f36eb8a8c0, query params: {"boardId":"f09fc829-c980-48aa-be44-4c243247c260","taskId":"e51a1810-b0a7-4b9f-8a20-78f36eb8a8c0"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/f09fc829-c980-48aa-be44-4c243247c260/tasks/66967764-1c13-4a9c-a429-94988028cb56, query params: {"boardId":"f09fc829-c980-48aa-be44-4c243247c260","taskId":"66967764-1c13-4a9c-a429-94988028cb56"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/f09fc829-c980-48aa-be44-4c243247c260/tasks/e51a1810-b0a7-4b9f-8a20-78f36eb8a8c0, query params: {"boardId":"f09fc829-c980-48aa-be44-4c243247c260","taskId":"e51a1810-b0a7-4b9f-8a20-78f36eb8a8c0"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/f09fc829-c980-48aa-be44-4c243247c260/tasks/66967764-1c13-4a9c-a429-94988028cb56, query params: {"boardId":"f09fc829-c980-48aa-be44-4c243247c260","taskId":"66967764-1c13-4a9c-a429-94988028cb56"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/f09fc829-c980-48aa-be44-4c243247c260, query params: {"id":"f09fc829-c980-48aa-be44-4c243247c260"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/0e6060f4-1e37-4319-ad1c-0f5bd70c9090, query params: {"id":"0e6060f4-1e37-4319-ad1c-0f5bd70c9090"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/8d32a537-00c7-4ed5-8cec-36b033bd166f, query params: {"id":"8d32a537-00c7-4ed5-8cec-36b033bd166f"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/0a46066c-4163-4350-af9a-d9357379d129, query params: {"id":"0a46066c-4163-4350-af9a-d9357379d129"}, body: {"id":"0a46066c-4163-4350-af9a-d9357379d129","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/0a46066c-4163-4350-af9a-d9357379d129, query params: {"id":"0a46066c-4163-4350-af9a-d9357379d129"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/0a46066c-4163-4350-af9a-d9357379d129, query params: {"id":"0a46066c-4163-4350-af9a-d9357379d129"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/11cf9d4d-cebe-4213-8f54-831380d4aa8d, query params: {"id":"11cf9d4d-cebe-4213-8f54-831380d4aa8d"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/11cf9d4d-cebe-4213-8f54-831380d4aa8d, query params: {"id":"11cf9d4d-cebe-4213-8f54-831380d4aa8d"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 404
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/b211582c-7c19-44f2-bb0d-34f811b579a1, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"b211582c-7c19-44f2-bb0d-34f811b579a1"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/d6a7bebd-a836-4a31-99a5-9986d1f6d2bb, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"d6a7bebd-a836-4a31-99a5-9986d1f6d2bb"}, body: null
+INFO: 12/22/2021, 5:23:20 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:20 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/45bae010-30bc-430d-8ba1-b1ff89afaa69, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"45bae010-30bc-430d-8ba1-b1ff89afaa69"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/52414020-1d87-40c0-991a-c75bc8bc9859, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"52414020-1d87-40c0-991a-c75bc8bc9859"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/404bb9f7-2667-4fec-bd37-fb8e772201f0, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"404bb9f7-2667-4fec-bd37-fb8e772201f0"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80, query params: {"id":"907b4020-9afe-471f-ad59-dfdff9899c80"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/b211582c-7c19-44f2-bb0d-34f811b579a1, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"b211582c-7c19-44f2-bb0d-34f811b579a1"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 404
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/45bae010-30bc-430d-8ba1-b1ff89afaa69, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"45bae010-30bc-430d-8ba1-b1ff89afaa69"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 404
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/52414020-1d87-40c0-991a-c75bc8bc9859, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"52414020-1d87-40c0-991a-c75bc8bc9859"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 404
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/404bb9f7-2667-4fec-bd37-fb8e772201f0, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"404bb9f7-2667-4fec-bd37-fb8e772201f0"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 404
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/907b4020-9afe-471f-ad59-dfdff9899c80/tasks/d6a7bebd-a836-4a31-99a5-9986d1f6d2bb, query params: {"boardId":"907b4020-9afe-471f-ad59-dfdff9899c80","taskId":"d6a7bebd-a836-4a31-99a5-9986d1f6d2bb"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 404
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/0e6060f4-1e37-4319-ad1c-0f5bd70c9090, query params: {"id":"0e6060f4-1e37-4319-ad1c-0f5bd70c9090"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 500
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 500
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks/2a856ff8-a4d1-47d9-81b0-49cb85e1f27a, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf","taskId":"2a856ff8-a4d1-47d9-81b0-49cb85e1f27a"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 201
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks/e0bad757-3366-4c6e-823a-1233648ca66d, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf","taskId":"e0bad757-3366-4c6e-823a-1233648ca66d"}, body: {"id":"e0bad757-3366-4c6e-823a-1233648ca66d","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf","columnId":null}
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks/e0bad757-3366-4c6e-823a-1233648ca66d, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf","taskId":"e0bad757-3366-4c6e-823a-1233648ca66d"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks/1443e990-3bbc-445d-a972-64c0be255d46, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf","taskId":"1443e990-3bbc-445d-a972-64c0be255d46"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 200
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks/1443e990-3bbc-445d-a972-64c0be255d46, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf","taskId":"1443e990-3bbc-445d-a972-64c0be255d46"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 204
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf/tasks/1443e990-3bbc-445d-a972-64c0be255d46, query params: {"boardId":"46b15db0-3a29-4809-8d97-ba21d83e91cf","taskId":"1443e990-3bbc-445d-a972-64c0be255d46"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 404
+INFO: 12/22/2021, 5:23:21 PM Received request from URL: localhost:4000/boards/46b15db0-3a29-4809-8d97-ba21d83e91cf, query params: {"id":"46b15db0-3a29-4809-8d97-ba21d83e91cf"}, body: null
+INFO: 12/22/2021, 5:23:21 PM Request completed with status code 204
+INFO: Server listening at http://127.0.0.1:4000
+INFO: Server listening at http://127.0.0.1:4000
+INFO: Server listening at http://127.0.0.1:4000
+INFO: 12/22/2021, 5:28:42 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:42 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:42 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:28:42 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:42 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef"}, body: null
+INFO: 12/22/2021, 5:28:42 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:42 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef"}, body: null
+INFO: 12/22/2021, 5:28:42 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks/350f300c-2e82-47fc-91de-fe107f5f89d9, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","taskId":"350f300c-2e82-47fc-91de-fe107f5f89d9"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks/39308ef7-90e2-43e9-8079-94f411ff9e48, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","taskId":"39308ef7-90e2-43e9-8079-94f411ff9e48"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks/dc64eea9-ced5-4e9a-a479-7beaa728b3fd, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","taskId":"dc64eea9-ced5-4e9a-a479-7beaa728b3fd"}, body: {"id":"dc64eea9-ced5-4e9a-a479-7beaa728b3fd","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks/dc64eea9-ced5-4e9a-a479-7beaa728b3fd, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","taskId":"dc64eea9-ced5-4e9a-a479-7beaa728b3fd"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks/350f300c-2e82-47fc-91de-fe107f5f89d9, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","taskId":"350f300c-2e82-47fc-91de-fe107f5f89d9"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks/350f300c-2e82-47fc-91de-fe107f5f89d9, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","taskId":"350f300c-2e82-47fc-91de-fe107f5f89d9"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef/tasks/350f300c-2e82-47fc-91de-fe107f5f89d9, query params: {"boardId":"0178665c-342b-4e80-9aaa-a614947f80ef","taskId":"350f300c-2e82-47fc-91de-fe107f5f89d9"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/0178665c-342b-4e80-9aaa-a614947f80ef, query params: {"id":"0178665c-342b-4e80-9aaa-a614947f80ef"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/f70425b0-9e45-45f1-8ca2-d1f644bc26ad, query params: {"id":"f70425b0-9e45-45f1-8ca2-d1f644bc26ad"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/f70425b0-9e45-45f1-8ca2-d1f644bc26ad, query params: {"id":"f70425b0-9e45-45f1-8ca2-d1f644bc26ad"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/6fad546b-ccfd-4ff6-9118-8c832d8f87c7, query params: {"id":"6fad546b-ccfd-4ff6-9118-8c832d8f87c7"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/18bcf493-0487-43d4-889d-13113290fbef, query params: {"id":"18bcf493-0487-43d4-889d-13113290fbef"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"18bcf493-0487-43d4-889d-13113290fbef"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/18bcf493-0487-43d4-889d-13113290fbef, query params: {"id":"18bcf493-0487-43d4-889d-13113290fbef"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/18bcf493-0487-43d4-889d-13113290fbef, query params: {"id":"18bcf493-0487-43d4-889d-13113290fbef"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/6f450d95-cdfc-4c59-acb2-9f41f196fb65, query params: {"id":"6f450d95-cdfc-4c59-acb2-9f41f196fb65"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/058c3fb2-1349-44d4-a097-a5d1ef7f8259/tasks, query params: {"boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"72db2cfe-b6ba-4d89-951a-d0363d4438ac","boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/058c3fb2-1349-44d4-a097-a5d1ef7f8259/tasks, query params: {"boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"72db2cfe-b6ba-4d89-951a-d0363d4438ac","boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259"}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/users/72db2cfe-b6ba-4d89-951a-d0363d4438ac, query params: {"id":"72db2cfe-b6ba-4d89-951a-d0363d4438ac"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/058c3fb2-1349-44d4-a097-a5d1ef7f8259/tasks/41fe014a-d244-481a-91df-4f4da7ab14d2, query params: {"boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259","taskId":"41fe014a-d244-481a-91df-4f4da7ab14d2"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/058c3fb2-1349-44d4-a097-a5d1ef7f8259/tasks/28dddc6d-6d83-4fa4-91a0-40022c9cfeab, query params: {"boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259","taskId":"28dddc6d-6d83-4fa4-91a0-40022c9cfeab"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/058c3fb2-1349-44d4-a097-a5d1ef7f8259/tasks/41fe014a-d244-481a-91df-4f4da7ab14d2, query params: {"boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259","taskId":"41fe014a-d244-481a-91df-4f4da7ab14d2"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/058c3fb2-1349-44d4-a097-a5d1ef7f8259/tasks/28dddc6d-6d83-4fa4-91a0-40022c9cfeab, query params: {"boardId":"058c3fb2-1349-44d4-a097-a5d1ef7f8259","taskId":"28dddc6d-6d83-4fa4-91a0-40022c9cfeab"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/058c3fb2-1349-44d4-a097-a5d1ef7f8259, query params: {"id":"058c3fb2-1349-44d4-a097-a5d1ef7f8259"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/22decee4-edd4-4070-9158-922bc1dbb773, query params: {"id":"22decee4-edd4-4070-9158-922bc1dbb773"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/321c098b-49f8-44b0-b71e-5c3d21942cee, query params: {"id":"321c098b-49f8-44b0-b71e-5c3d21942cee"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/4601fac7-efb5-441e-9883-ae2eee8ee9ab, query params: {"id":"4601fac7-efb5-441e-9883-ae2eee8ee9ab"}, body: {"id":"4601fac7-efb5-441e-9883-ae2eee8ee9ab","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/4601fac7-efb5-441e-9883-ae2eee8ee9ab, query params: {"id":"4601fac7-efb5-441e-9883-ae2eee8ee9ab"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/4601fac7-efb5-441e-9883-ae2eee8ee9ab, query params: {"id":"4601fac7-efb5-441e-9883-ae2eee8ee9ab"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/08004654-d505-45d5-9770-03dd32ee1957, query params: {"id":"08004654-d505-45d5-9770-03dd32ee1957"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/08004654-d505-45d5-9770-03dd32ee1957, query params: {"id":"08004654-d505-45d5-9770-03dd32ee1957"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/ad91fbbf-0c6c-4e07-9f49-32a05473e65a, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"ad91fbbf-0c6c-4e07-9f49-32a05473e65a"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/30ce503b-805a-422a-83a9-7e79d7996b97, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"30ce503b-805a-422a-83a9-7e79d7996b97"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/5dad4986-b1b0-4987-92f1-01b66a7cce9f, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"5dad4986-b1b0-4987-92f1-01b66a7cce9f"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/46282eab-dc58-490d-9f4f-9e7c5b059abb, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"46282eab-dc58-490d-9f4f-9e7c5b059abb"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/eb109097-062e-4f37-a73c-ce2ce4cf8c5c, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"eb109097-062e-4f37-a73c-ce2ce4cf8c5c"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808, query params: {"id":"908ebf41-7063-436b-b68f-2ca6f7c44808"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/ad91fbbf-0c6c-4e07-9f49-32a05473e65a, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"ad91fbbf-0c6c-4e07-9f49-32a05473e65a"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/30ce503b-805a-422a-83a9-7e79d7996b97, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"30ce503b-805a-422a-83a9-7e79d7996b97"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/5dad4986-b1b0-4987-92f1-01b66a7cce9f, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"5dad4986-b1b0-4987-92f1-01b66a7cce9f"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/46282eab-dc58-490d-9f4f-9e7c5b059abb, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"46282eab-dc58-490d-9f4f-9e7c5b059abb"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/908ebf41-7063-436b-b68f-2ca6f7c44808/tasks/eb109097-062e-4f37-a73c-ce2ce4cf8c5c, query params: {"boardId":"908ebf41-7063-436b-b68f-2ca6f7c44808","taskId":"eb109097-062e-4f37-a73c-ce2ce4cf8c5c"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:43 PM Received request from URL: localhost:4000/boards/22decee4-edd4-4070-9158-922bc1dbb773, query params: {"id":"22decee4-edd4-4070-9158-922bc1dbb773"}, body: null
+INFO: 12/22/2021, 5:28:43 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks/96df29c2-bfd5-4895-a916-8841db4678f9, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","taskId":"96df29c2-bfd5-4895-a916-8841db4678f9"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks/5e075401-a4ea-48de-a713-60285b3b7436, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","taskId":"5e075401-a4ea-48de-a713-60285b3b7436"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 201
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks/9cd3f365-2fe9-4a46-af57-c0cd97c7879f, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","taskId":"9cd3f365-2fe9-4a46-af57-c0cd97c7879f"}, body: {"id":"9cd3f365-2fe9-4a46-af57-c0cd97c7879f","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","columnId":null}
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks/9cd3f365-2fe9-4a46-af57-c0cd97c7879f, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","taskId":"9cd3f365-2fe9-4a46-af57-c0cd97c7879f"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks/96df29c2-bfd5-4895-a916-8841db4678f9, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","taskId":"96df29c2-bfd5-4895-a916-8841db4678f9"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 200
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks/96df29c2-bfd5-4895-a916-8841db4678f9, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","taskId":"96df29c2-bfd5-4895-a916-8841db4678f9"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65/tasks/96df29c2-bfd5-4895-a916-8841db4678f9, query params: {"boardId":"3cb8a05b-3917-4ad6-8243-3faa082d1f65","taskId":"96df29c2-bfd5-4895-a916-8841db4678f9"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 404
+INFO: 12/22/2021, 5:28:59 PM Received request from URL: localhost:4000/boards/3cb8a05b-3917-4ad6-8243-3faa082d1f65, query params: {"id":"3cb8a05b-3917-4ad6-8243-3faa082d1f65"}, body: null
+INFO: 12/22/2021, 5:28:59 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/2a82c69d-f336-494f-8d4e-f730df89eb12, query params: {"id":"2a82c69d-f336-494f-8d4e-f730df89eb12"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/3fe3e0b6-f604-4f92-9447-31aad85180e2, query params: {"id":"3fe3e0b6-f604-4f92-9447-31aad85180e2"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/4f7b0f06-c57a-496c-9ad7-3db6911d9bfe, query params: {"id":"4f7b0f06-c57a-496c-9ad7-3db6911d9bfe"}, body: {"id":"4f7b0f06-c57a-496c-9ad7-3db6911d9bfe","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/4f7b0f06-c57a-496c-9ad7-3db6911d9bfe, query params: {"id":"4f7b0f06-c57a-496c-9ad7-3db6911d9bfe"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/4f7b0f06-c57a-496c-9ad7-3db6911d9bfe, query params: {"id":"4f7b0f06-c57a-496c-9ad7-3db6911d9bfe"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/590b41de-fdd6-4c45-bb28-524b114b1345, query params: {"id":"590b41de-fdd6-4c45-bb28-524b114b1345"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/590b41de-fdd6-4c45-bb28-524b114b1345, query params: {"id":"590b41de-fdd6-4c45-bb28-524b114b1345"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/9073cbd3-5d7d-4b4d-b551-8787c082b308, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"9073cbd3-5d7d-4b4d-b551-8787c082b308"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/3847fb8f-6f44-40e8-81d5-767c931c44d9, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"3847fb8f-6f44-40e8-81d5-767c931c44d9"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/f6a55b39-3b80-4662-ac19-65a6cc8a49c6, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"f6a55b39-3b80-4662-ac19-65a6cc8a49c6"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/c7392d8c-71ed-4c96-86cb-a934c9dfa1cc, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"c7392d8c-71ed-4c96-86cb-a934c9dfa1cc"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/38e200e8-bf62-4cb7-9824-4a2efcf4e1e8, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"38e200e8-bf62-4cb7-9824-4a2efcf4e1e8"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d, query params: {"id":"45b535f9-c276-4334-8af9-86db3be9f09d"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/9073cbd3-5d7d-4b4d-b551-8787c082b308, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"9073cbd3-5d7d-4b4d-b551-8787c082b308"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/3847fb8f-6f44-40e8-81d5-767c931c44d9, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"3847fb8f-6f44-40e8-81d5-767c931c44d9"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/f6a55b39-3b80-4662-ac19-65a6cc8a49c6, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"f6a55b39-3b80-4662-ac19-65a6cc8a49c6"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/38e200e8-bf62-4cb7-9824-4a2efcf4e1e8, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"38e200e8-bf62-4cb7-9824-4a2efcf4e1e8"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/45b535f9-c276-4334-8af9-86db3be9f09d/tasks/c7392d8c-71ed-4c96-86cb-a934c9dfa1cc, query params: {"boardId":"45b535f9-c276-4334-8af9-86db3be9f09d","taskId":"c7392d8c-71ed-4c96-86cb-a934c9dfa1cc"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/2a82c69d-f336-494f-8d4e-f730df89eb12, query params: {"id":"2a82c69d-f336-494f-8d4e-f730df89eb12"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/1ad2b56f-bff2-42f5-be6b-edbbed9421b7, query params: {"id":"1ad2b56f-bff2-42f5-be6b-edbbed9421b7"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/1ad2b56f-bff2-42f5-be6b-edbbed9421b7, query params: {"id":"1ad2b56f-bff2-42f5-be6b-edbbed9421b7"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/77316f9f-6b30-4e1f-ae05-546c74c1f706, query params: {"id":"77316f9f-6b30-4e1f-ae05-546c74c1f706"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/98838225-de02-4a71-880a-10fecfc1ee83, query params: {"id":"98838225-de02-4a71-880a-10fecfc1ee83"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"98838225-de02-4a71-880a-10fecfc1ee83"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/98838225-de02-4a71-880a-10fecfc1ee83, query params: {"id":"98838225-de02-4a71-880a-10fecfc1ee83"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/98838225-de02-4a71-880a-10fecfc1ee83, query params: {"id":"98838225-de02-4a71-880a-10fecfc1ee83"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/ba841c9c-1e65-4307-9b2b-e573735e3692, query params: {"id":"ba841c9c-1e65-4307-9b2b-e573735e3692"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/dd001363-958f-41aa-9181-0cd01ca6862d/tasks, query params: {"boardId":"dd001363-958f-41aa-9181-0cd01ca6862d"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"b03cedec-557d-4794-9614-4657c125e867","boardId":"dd001363-958f-41aa-9181-0cd01ca6862d"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/dd001363-958f-41aa-9181-0cd01ca6862d/tasks, query params: {"boardId":"dd001363-958f-41aa-9181-0cd01ca6862d"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"b03cedec-557d-4794-9614-4657c125e867","boardId":"dd001363-958f-41aa-9181-0cd01ca6862d"}
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/users/b03cedec-557d-4794-9614-4657c125e867, query params: {"id":"b03cedec-557d-4794-9614-4657c125e867"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/dd001363-958f-41aa-9181-0cd01ca6862d/tasks/0f293352-51c5-48fa-87c2-a5c1287ad139, query params: {"boardId":"dd001363-958f-41aa-9181-0cd01ca6862d","taskId":"0f293352-51c5-48fa-87c2-a5c1287ad139"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/dd001363-958f-41aa-9181-0cd01ca6862d/tasks/15752b9d-0dab-4314-97c8-45d5300b6465, query params: {"boardId":"dd001363-958f-41aa-9181-0cd01ca6862d","taskId":"15752b9d-0dab-4314-97c8-45d5300b6465"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/dd001363-958f-41aa-9181-0cd01ca6862d/tasks/0f293352-51c5-48fa-87c2-a5c1287ad139, query params: {"boardId":"dd001363-958f-41aa-9181-0cd01ca6862d","taskId":"0f293352-51c5-48fa-87c2-a5c1287ad139"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/dd001363-958f-41aa-9181-0cd01ca6862d/tasks/15752b9d-0dab-4314-97c8-45d5300b6465, query params: {"boardId":"dd001363-958f-41aa-9181-0cd01ca6862d","taskId":"15752b9d-0dab-4314-97c8-45d5300b6465"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:00 PM Received request from URL: localhost:4000/boards/dd001363-958f-41aa-9181-0cd01ca6862d, query params: {"id":"dd001363-958f-41aa-9181-0cd01ca6862d"}, body: null
+INFO: 12/22/2021, 5:29:00 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:09 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:09 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:09 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:29:09 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:09 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8"}, body: null
+INFO: 12/22/2021, 5:29:09 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:09 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8"}, body: null
+INFO: 12/22/2021, 5:29:09 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:09 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks/0418ae75-c044-4fd7-a793-db37fc8cc57e, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","taskId":"0418ae75-c044-4fd7-a793-db37fc8cc57e"}, body: null
+INFO: 12/22/2021, 5:29:09 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:09 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:29:09 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:09 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks/e16fafca-45a0-4b4a-88fe-c7ee360cc05f, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","taskId":"e16fafca-45a0-4b4a-88fe-c7ee360cc05f"}, body: null
+INFO: 12/22/2021, 5:29:09 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks/67e44b46-bb54-4105-8869-0401020db38a, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","taskId":"67e44b46-bb54-4105-8869-0401020db38a"}, body: {"id":"67e44b46-bb54-4105-8869-0401020db38a","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","columnId":null}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks/67e44b46-bb54-4105-8869-0401020db38a, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","taskId":"67e44b46-bb54-4105-8869-0401020db38a"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks/0418ae75-c044-4fd7-a793-db37fc8cc57e, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","taskId":"0418ae75-c044-4fd7-a793-db37fc8cc57e"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks/0418ae75-c044-4fd7-a793-db37fc8cc57e, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","taskId":"0418ae75-c044-4fd7-a793-db37fc8cc57e"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8/tasks/0418ae75-c044-4fd7-a793-db37fc8cc57e, query params: {"boardId":"40de91db-4d9e-437b-9470-c00769db38f8","taskId":"0418ae75-c044-4fd7-a793-db37fc8cc57e"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/40de91db-4d9e-437b-9470-c00769db38f8, query params: {"id":"40de91db-4d9e-437b-9470-c00769db38f8"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/fe6b8b85-f856-417a-81e3-6f95996d1052, query params: {"id":"fe6b8b85-f856-417a-81e3-6f95996d1052"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6e894faf-115a-4a71-a89a-47ab75f964e6, query params: {"id":"6e894faf-115a-4a71-a89a-47ab75f964e6"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/90e91c23-1815-47ae-b1a5-9eb3cb83071a, query params: {"id":"90e91c23-1815-47ae-b1a5-9eb3cb83071a"}, body: {"id":"90e91c23-1815-47ae-b1a5-9eb3cb83071a","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/90e91c23-1815-47ae-b1a5-9eb3cb83071a, query params: {"id":"90e91c23-1815-47ae-b1a5-9eb3cb83071a"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/90e91c23-1815-47ae-b1a5-9eb3cb83071a, query params: {"id":"90e91c23-1815-47ae-b1a5-9eb3cb83071a"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/bd7eee26-662a-4967-b31c-29c01ad89ade, query params: {"id":"bd7eee26-662a-4967-b31c-29c01ad89ade"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/bd7eee26-662a-4967-b31c-29c01ad89ade, query params: {"id":"bd7eee26-662a-4967-b31c-29c01ad89ade"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/c922b27e-0aa4-4d87-8644-0a574209a8ff, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"c922b27e-0aa4-4d87-8644-0a574209a8ff"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/c2b14dcf-a124-4497-8277-e199d3849836, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"c2b14dcf-a124-4497-8277-e199d3849836"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/cec8b573-0250-4554-be04-9294e3a3629b, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"cec8b573-0250-4554-be04-9294e3a3629b"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/8ac202bb-47e0-4330-88b7-07ebbdc79da3, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"8ac202bb-47e0-4330-88b7-07ebbdc79da3"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/863f18a0-c219-479b-87b2-d6ffe2e98452, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"863f18a0-c219-479b-87b2-d6ffe2e98452"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d, query params: {"id":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/863f18a0-c219-479b-87b2-d6ffe2e98452, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"863f18a0-c219-479b-87b2-d6ffe2e98452"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/c922b27e-0aa4-4d87-8644-0a574209a8ff, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"c922b27e-0aa4-4d87-8644-0a574209a8ff"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/c2b14dcf-a124-4497-8277-e199d3849836, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"c2b14dcf-a124-4497-8277-e199d3849836"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/cec8b573-0250-4554-be04-9294e3a3629b, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"cec8b573-0250-4554-be04-9294e3a3629b"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/1e82b8f4-bf7e-472a-acc2-836a750b4d5d/tasks/8ac202bb-47e0-4330-88b7-07ebbdc79da3, query params: {"boardId":"1e82b8f4-bf7e-472a-acc2-836a750b4d5d","taskId":"8ac202bb-47e0-4330-88b7-07ebbdc79da3"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/fe6b8b85-f856-417a-81e3-6f95996d1052, query params: {"id":"fe6b8b85-f856-417a-81e3-6f95996d1052"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/7792ac82-9efd-468e-b950-8cffbdafbf41, query params: {"id":"7792ac82-9efd-468e-b950-8cffbdafbf41"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/7792ac82-9efd-468e-b950-8cffbdafbf41, query params: {"id":"7792ac82-9efd-468e-b950-8cffbdafbf41"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/63ba4395-1ff0-45e7-9213-fb4c48fc6364, query params: {"id":"63ba4395-1ff0-45e7-9213-fb4c48fc6364"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/c365bdc2-ae04-4eca-97ee-82236aa7390f, query params: {"id":"c365bdc2-ae04-4eca-97ee-82236aa7390f"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"c365bdc2-ae04-4eca-97ee-82236aa7390f"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/c365bdc2-ae04-4eca-97ee-82236aa7390f, query params: {"id":"c365bdc2-ae04-4eca-97ee-82236aa7390f"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/c365bdc2-ae04-4eca-97ee-82236aa7390f, query params: {"id":"c365bdc2-ae04-4eca-97ee-82236aa7390f"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/d4a94a1c-d6af-4fa6-bb42-9b8b155ca70c, query params: {"id":"d4a94a1c-d6af-4fa6-bb42-9b8b155ca70c"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6bda5350-2494-409a-88f2-0463782d1cee/tasks, query params: {"boardId":"6bda5350-2494-409a-88f2-0463782d1cee"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"8bec3b74-09f2-4fda-a8ac-a0a194b605ab","boardId":"6bda5350-2494-409a-88f2-0463782d1cee"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6bda5350-2494-409a-88f2-0463782d1cee/tasks, query params: {"boardId":"6bda5350-2494-409a-88f2-0463782d1cee"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"8bec3b74-09f2-4fda-a8ac-a0a194b605ab","boardId":"6bda5350-2494-409a-88f2-0463782d1cee"}
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/users/8bec3b74-09f2-4fda-a8ac-a0a194b605ab, query params: {"id":"8bec3b74-09f2-4fda-a8ac-a0a194b605ab"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6bda5350-2494-409a-88f2-0463782d1cee/tasks/24e1dadc-a0bc-4bb9-a167-283462d9ba1b, query params: {"boardId":"6bda5350-2494-409a-88f2-0463782d1cee","taskId":"24e1dadc-a0bc-4bb9-a167-283462d9ba1b"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6bda5350-2494-409a-88f2-0463782d1cee/tasks/e00a1c7d-e27f-4b3e-b0cf-9d78697e5cb2, query params: {"boardId":"6bda5350-2494-409a-88f2-0463782d1cee","taskId":"e00a1c7d-e27f-4b3e-b0cf-9d78697e5cb2"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6bda5350-2494-409a-88f2-0463782d1cee/tasks/24e1dadc-a0bc-4bb9-a167-283462d9ba1b, query params: {"boardId":"6bda5350-2494-409a-88f2-0463782d1cee","taskId":"24e1dadc-a0bc-4bb9-a167-283462d9ba1b"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6bda5350-2494-409a-88f2-0463782d1cee/tasks/e00a1c7d-e27f-4b3e-b0cf-9d78697e5cb2, query params: {"boardId":"6bda5350-2494-409a-88f2-0463782d1cee","taskId":"e00a1c7d-e27f-4b3e-b0cf-9d78697e5cb2"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:10 PM Received request from URL: localhost:4000/boards/6bda5350-2494-409a-88f2-0463782d1cee, query params: {"id":"6bda5350-2494-409a-88f2-0463782d1cee"}, body: null
+INFO: 12/22/2021, 5:29:10 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks/830ba9b6-6e5d-42ad-9227-2fc0451cfe9a, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","taskId":"830ba9b6-6e5d-42ad-9227-2fc0451cfe9a"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks/0eec2599-5aa3-4686-a563-bf9f9709fbe1, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","taskId":"0eec2599-5aa3-4686-a563-bf9f9709fbe1"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe"}, body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"","columnId":null}
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks/6c936319-51f1-44b3-8484-0f03907e2508, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","taskId":"6c936319-51f1-44b3-8484-0f03907e2508"}, body: {"id":"6c936319-51f1-44b3-8484-0f03907e2508","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","columnId":null}
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks/6c936319-51f1-44b3-8484-0f03907e2508, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","taskId":"6c936319-51f1-44b3-8484-0f03907e2508"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks/830ba9b6-6e5d-42ad-9227-2fc0451cfe9a, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","taskId":"830ba9b6-6e5d-42ad-9227-2fc0451cfe9a"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks/830ba9b6-6e5d-42ad-9227-2fc0451cfe9a, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","taskId":"830ba9b6-6e5d-42ad-9227-2fc0451cfe9a"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe/tasks/830ba9b6-6e5d-42ad-9227-2fc0451cfe9a, query params: {"boardId":"be4a3365-3051-453b-8535-2e92ec82c9fe","taskId":"830ba9b6-6e5d-42ad-9227-2fc0451cfe9a"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:25 PM Received request from URL: localhost:4000/boards/be4a3365-3051-453b-8535-2e92ec82c9fe, query params: {"id":"be4a3365-3051-453b-8535-2e92ec82c9fe"}, body: null
+INFO: 12/22/2021, 5:29:25 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/049cbb5c-4b04-46e3-9967-aa22341f68ba, query params: {"id":"049cbb5c-4b04-46e3-9967-aa22341f68ba"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/7db92014-4837-472b-b9b8-60ee91d7dcaa, query params: {"id":"7db92014-4837-472b-b9b8-60ee91d7dcaa"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/63db0a79-b835-4d37-9d03-7bc57fe9df8b, query params: {"id":"63db0a79-b835-4d37-9d03-7bc57fe9df8b"}, body: {"id":"63db0a79-b835-4d37-9d03-7bc57fe9df8b","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/63db0a79-b835-4d37-9d03-7bc57fe9df8b, query params: {"id":"63db0a79-b835-4d37-9d03-7bc57fe9df8b"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/63db0a79-b835-4d37-9d03-7bc57fe9df8b, query params: {"id":"63db0a79-b835-4d37-9d03-7bc57fe9df8b"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/66382952-6df0-4108-ba6d-2b0988ec422a, query params: {"id":"66382952-6df0-4108-ba6d-2b0988ec422a"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/66382952-6df0-4108-ba6d-2b0988ec422a, query params: {"id":"66382952-6df0-4108-ba6d-2b0988ec422a"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140"}, body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"5a157691-19e0-4685-821c-af56f0792140","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"5a157691-19e0-4685-821c-af56f0792140","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"5a157691-19e0-4685-821c-af56f0792140","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140"}, body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"5a157691-19e0-4685-821c-af56f0792140","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140"}, body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"5a157691-19e0-4685-821c-af56f0792140","userId":null,"columnId":null}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/5c2f6f22-d918-4133-ab24-b8a9c96c0781, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"5c2f6f22-d918-4133-ab24-b8a9c96c0781"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/7b98435e-590b-4bdc-b338-10f5faed9515, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"7b98435e-590b-4bdc-b338-10f5faed9515"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/3ff5a757-d56e-4ddd-98ef-5fecdbc08e73, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"3ff5a757-d56e-4ddd-98ef-5fecdbc08e73"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/6af789af-5742-4b17-9423-2cf45e6d6332, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"6af789af-5742-4b17-9423-2cf45e6d6332"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/580e9674-ec29-4b1e-93ef-fd7e9e50156c, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"580e9674-ec29-4b1e-93ef-fd7e9e50156c"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140, query params: {"id":"5a157691-19e0-4685-821c-af56f0792140"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/5c2f6f22-d918-4133-ab24-b8a9c96c0781, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"5c2f6f22-d918-4133-ab24-b8a9c96c0781"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/580e9674-ec29-4b1e-93ef-fd7e9e50156c, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"580e9674-ec29-4b1e-93ef-fd7e9e50156c"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/7b98435e-590b-4bdc-b338-10f5faed9515, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"7b98435e-590b-4bdc-b338-10f5faed9515"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/3ff5a757-d56e-4ddd-98ef-5fecdbc08e73, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"3ff5a757-d56e-4ddd-98ef-5fecdbc08e73"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/5a157691-19e0-4685-821c-af56f0792140/tasks/6af789af-5742-4b17-9423-2cf45e6d6332, query params: {"boardId":"5a157691-19e0-4685-821c-af56f0792140","taskId":"6af789af-5742-4b17-9423-2cf45e6d6332"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 404
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/049cbb5c-4b04-46e3-9967-aa22341f68ba, query params: {"id":"049cbb5c-4b04-46e3-9967-aa22341f68ba"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users, query params: {}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/97ddc678-7397-48f4-85a6-429b28751201, query params: {"id":"97ddc678-7397-48f4-85a6-429b28751201"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/97ddc678-7397-48f4-85a6-429b28751201, query params: {"id":"97ddc678-7397-48f4-85a6-429b28751201"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/109e86e5-59ea-4b32-9cc6-1b2891afcb32, query params: {"id":"109e86e5-59ea-4b32-9cc6-1b2891afcb32"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/7025e60a-77de-4aed-99b0-af33b7a7afef, query params: {"id":"7025e60a-77de-4aed-99b0-af33b7a7afef"}, body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"7025e60a-77de-4aed-99b0-af33b7a7afef"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/7025e60a-77de-4aed-99b0-af33b7a7afef, query params: {"id":"7025e60a-77de-4aed-99b0-af33b7a7afef"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/7025e60a-77de-4aed-99b0-af33b7a7afef, query params: {"id":"7025e60a-77de-4aed-99b0-af33b7a7afef"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/69efb720-4046-4d35-beb3-0ad4cb681fb9, query params: {"id":"69efb720-4046-4d35-beb3-0ad4cb681fb9"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users, query params: {}, body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards, query params: {}, body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/c9d6d2fa-4f74-471e-ad2b-e104f2fefe00/tasks, query params: {"boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00"}, body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"1d6b35eb-e100-46a3-8e94-a49756abf94a","boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/c9d6d2fa-4f74-471e-ad2b-e104f2fefe00/tasks, query params: {"boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00"}, body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"1d6b35eb-e100-46a3-8e94-a49756abf94a","boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00"}
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 201
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/users/1d6b35eb-e100-46a3-8e94-a49756abf94a, query params: {"id":"1d6b35eb-e100-46a3-8e94-a49756abf94a"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/c9d6d2fa-4f74-471e-ad2b-e104f2fefe00/tasks/6f1cb822-1924-4eff-99a0-539e191be38f, query params: {"boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00","taskId":"6f1cb822-1924-4eff-99a0-539e191be38f"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/c9d6d2fa-4f74-471e-ad2b-e104f2fefe00/tasks/6249e895-243f-4c71-b1a0-daa7e942cac5, query params: {"boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00","taskId":"6249e895-243f-4c71-b1a0-daa7e942cac5"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 200
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/c9d6d2fa-4f74-471e-ad2b-e104f2fefe00/tasks/6f1cb822-1924-4eff-99a0-539e191be38f, query params: {"boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00","taskId":"6f1cb822-1924-4eff-99a0-539e191be38f"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/c9d6d2fa-4f74-471e-ad2b-e104f2fefe00/tasks/6249e895-243f-4c71-b1a0-daa7e942cac5, query params: {"boardId":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00","taskId":"6249e895-243f-4c71-b1a0-daa7e942cac5"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204
+INFO: 12/22/2021, 5:29:26 PM Received request from URL: localhost:4000/boards/c9d6d2fa-4f74-471e-ad2b-e104f2fefe00, query params: {"id":"c9d6d2fa-4f74-471e-ad2b-e104f2fefe00"}, body: null
+INFO: 12/22/2021, 5:29:26 PM Request completed with status code 204

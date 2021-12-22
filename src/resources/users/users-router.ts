@@ -94,6 +94,7 @@ const deleteUserOpts = {
  * Returns the Fastify Plugin Callback (users route)
  * @param fastify Fastify Instance
  * @param _ Fastify plugin options object
+ * @param done finish callback
  * @returns Fastify plugin callback
  */
 const usersRouter: FastifyPluginCallback = (

@@ -9,6 +9,10 @@ import {
   IUpdateUserRequest,
   IUserData,
 } from './types';
+import ClientError from '../../errors/client-error';
+import config from '../../common/config';
+
+const codes = config.HTTP_CODES;
 
 /**
  * Sends all Users to the client
@@ -39,8 +43,7 @@ const getUserByID = async (
   const user: User | null = await usersRepo.getUserByID(id);
 
   if (!user) {
-    res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
-    return;
+    throw new ClientError(`User with ID ${id} doesn't exist`, codes.NOT_FOUND);
   }
   res.send(user);
 };
@@ -58,7 +61,7 @@ const postUser = async (
   const user = new User({ ...req.body });
 
   const createdUser: User = await usersRepo.postUser(user);
-  res.status(201).send(createdUser);
+  res.status(codes.CREATED).send(createdUser);
 };
 
 /**
@@ -77,8 +80,7 @@ const updateUser = async (
   const updatedUser: User | null = await usersRepo.updateUser(id, dataToUpdate);
 
   if (!updatedUser) {
-    res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
-    return;
+    throw new ClientError(`User with ID ${id} doesn't exist`, codes.NOT_FOUND);
   }
   res.send(updatedUser);
 };
@@ -98,12 +100,11 @@ const deleteUser = async (
   const isDeleted: boolean = await usersRepo.deleteUser(id);
 
   if (!isDeleted) {
-    res.status(404).send(new Error(`User with ID ${id} doesn't exist`));
-    return;
+    throw new ClientError(`User with ID ${id} doesn't exist`, codes.NOT_FOUND);
   }
 
   await tasksRepo.unassignTasks(id);
-  res.status(204).send();
+  res.status(codes.NO_CONTENT).send();
 };
 
 export { getAllUsers, getUserByID, postUser, updateUser, deleteUser };

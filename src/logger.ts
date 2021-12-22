@@ -1,10 +1,21 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
 import fs from 'fs';
+import config from './common/config';
 
-const getDateTime = (): string => {
-  return new Date().toLocaleString();
-};
+const { loggingLevelCode } = config;
 
+/**
+ * Returns current date and time in string
+ * @returns time and date
+ */
+const getDateTime = (): string => new Date().toLocaleString();
+
+/**
+ * Adds a cusom logger to the Fastify instance
+ * @param fastify Fastify Instance
+ * @param errorLogFilePath path to the errors log file
+ * @returns void (Promise)
+ */
 const logger = async (
   fastify: FastifyInstance,
   errorLogFilePath: string
@@ -15,7 +26,7 @@ const logger = async (
     const errorMessage = `ERROR: ${getDateTime()} ${e.message}\n`;
 
     errorFileWriteStream.write(errorMessage, () => {
-      console.log(errorMessage);
+      console.log(errorMessage); // eslint-disable-line no-console
       process.exit(1);
     });
   });
@@ -24,17 +35,17 @@ const logger = async (
     const errorMessage = `ERROR: ${getDateTime()} ${(e as Error).message}\n`;
 
     errorFileWriteStream.write(errorMessage, () => {
-      console.log(errorMessage);
+      console.log(errorMessage); // eslint-disable-line no-console
       process.exit(1);
     });
   });
 
   fastify.addHook(
     'onError',
-    (_req: FastifyRequest, _res: FastifyReply, e: Error, done) => {
-      const errorMessage = `ERROR: ${getDateTime()} ${(e as Error).message}\n`;
+    async (_req: FastifyRequest, _res: FastifyReply, e: Error, done) => {
+      const logMessage = `ERROR: ${getDateTime()} ${e.message}\n`;
 
-      errorFileWriteStream.write(errorMessage, () => {
+      errorFileWriteStream.write(logMessage, () => {
         done();
       });
     }
@@ -45,11 +56,14 @@ const logger = async (
     (req: FastifyRequest, _: FastifyReply, done) => {
       const { hostname, url, params, body } = req;
 
-      req.log.info(
-        `${getDateTime()} Received request from URL: ${hostname}${url}, query params: ${JSON.stringify(
-          params
-        )}, body: ${JSON.stringify(body as string)}`
-      );
+      if (loggingLevelCode >= 2) {
+        req.log.info(
+          `${getDateTime()} Received request from URL: ${hostname}${url}, query params: ${JSON.stringify(
+            params
+          )}, body: ${JSON.stringify(body as string)}`
+        );
+      }
+
       done();
     }
   );
@@ -59,10 +73,12 @@ const logger = async (
     (_: FastifyRequest, res: FastifyReply, done) => {
       const { statusCode } = res.raw;
 
-      res.log.info(
-        `${getDateTime()} Request completed with status code ${statusCode}`
-      );
-      done();
+      if (loggingLevelCode >= 2) {
+        res.log.info(
+          `${getDateTime()} Request completed with status code ${statusCode}`
+        );
+        done();
+      }
     }
   );
 };

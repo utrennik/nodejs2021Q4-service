@@ -21,9 +21,18 @@ const config = {
   MONGO_CONNECTION_STRING: process.env.MONGO_CONNECTION_STRING,
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
   AUTH_MODE: process.env.AUTH_MODE === 'true',
-  LOGGING_LEVEL: loggingLevels[loggingLevel as keyof object],
+  loggingLevel: loggingLevels[loggingLevel as keyof object],
   COMMON_LOG_FILE: '../common_log.txt',
   ERROR_LOG_FILE: '../error_log.txt',
+  HTTP_CODES: {
+    OK: 200,
+    CREATED: 201,
+    NO_CONTENT: 204,
+    BAD_REQUEST: 400,
+    NOT_FOUND: 404,
+    INTERNAL_SERVER_ERROR: 500,
+  },
+  loggingLevelCode: +loggingLevel,
 };
 
 export default config;

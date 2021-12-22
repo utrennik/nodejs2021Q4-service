@@ -10,6 +10,10 @@ import {
   IDeleteTaskRequest,
 } from './types';
 import Board from '../boards/board-model';
+import ClientError from '../../errors/client-error';
+import config from '../../common/config';
+
+const codes = config.HTTP_CODES;
 
 /**
  * Sends the Tasks by Board id to the client
@@ -25,10 +29,10 @@ const getTasksByBoardId = async (
   const tasks: Task[] | null = await tasksRepo.getTasksByBoardId(boardId);
 
   if (!tasks) {
-    res
-      .status(404)
-      .send(new Error(`There are no tasks with board ID ${boardId}`));
-    return;
+    throw new ClientError(
+      `There are no tasks with board ID ${boardId}`,
+      codes.NOT_FOUND
+    );
   }
 
   res.send(tasks);
@@ -49,14 +53,10 @@ const getTask = async (
   const task: Task | null = await tasksRepo.getTask(boardId, taskId);
 
   if (!task) {
-    res
-      .status(404)
-      .send(
-        new Error(
-          `Task with ID ${taskId} on board with ID ${boardId} not found!`
-        )
-      );
-    return;
+    throw new ClientError(
+      `Task with ID ${taskId} on board with ID ${boardId} not found!`,
+      codes.NOT_FOUND
+    );
   }
 
   res.send(task);
@@ -81,11 +81,13 @@ const postTask = async (
   );
 
   if (!board) {
-    res.status(400).send(new Error(`Board with ID ${boardId} not found!`));
-    return;
+    throw new ClientError(
+      `Board with ID ${boardId} not found!`,
+      codes.NOT_FOUND
+    );
   }
   const createdTask: Task = await tasksRepo.postTask(task);
-  res.status(201).send(createdTask);
+  res.status(codes.CREATED).send(createdTask);
 };
 
 /**
@@ -104,8 +106,10 @@ const updateTask = async (
   const board: Board | null = await boardsRepo.getBoardByID(boardId);
 
   if (!board) {
-    res.status(400).send(new Error(`Board with ID ${boardId} not found!`));
-    return;
+    throw new ClientError(
+      `Board with ID ${boardId} not found!`,
+      codes.NOT_FOUND
+    );
   }
 
   const updatedTask: Task | null = await tasksRepo.updateTask(
@@ -115,8 +119,7 @@ const updateTask = async (
   );
 
   if (!updatedTask) {
-    res.status(404).send(new Error(`Task with ID ${taskId} not found!`));
-    return;
+    throw new ClientError(`Task with ID ${taskId} not found!`, codes.NOT_FOUND);
   }
 
   res.send(updatedTask);
@@ -137,18 +140,22 @@ const deleteTask = async (
   const board: Board | null = await boardsRepo.getBoardByID(boardId);
 
   if (!board) {
-    res.status(400).send(new Error(`Board with ID ${boardId} not found!`));
-    return;
+    throw new ClientError(
+      `Board with ID ${boardId} not found!`,
+      codes.NOT_FOUND
+    );
   }
 
   const isDeleted: boolean = await tasksRepo.deleteTask(boardId, taskId);
 
   if (!isDeleted) {
-    res.status(404).send(new Error(`Task with ID ${taskId} doesn't exist`));
-    return;
+    throw new ClientError(
+      `Task with ID ${taskId} doesn't exist`,
+      codes.NOT_FOUND
+    );
   }
 
-  res.status(204).send();
+  res.status(codes.NO_CONTENT).send();
 };
 
 export { getTasksByBoardId, getTask, postTask, updateTask, deleteTask };
