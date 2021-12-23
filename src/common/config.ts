@@ -13,7 +13,12 @@ const loggingLevels = {
   4: 'trace',
 };
 
-const loggingLevel: string = process.env.LOGGING_LEVEL || '4';
+const defaultLoggingLevel = '4';
+
+const loggingLevel: string =
+  process.env.LOGGING_LEVEL !== undefined && +process.env.LOGGING_LEVEL < 5
+    ? process.env.LOGGING_LEVEL
+    : defaultLoggingLevel;
 
 const config = {
   PORT: process.env.PORT,

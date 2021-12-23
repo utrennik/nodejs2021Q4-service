@@ -37,6 +37,9 @@ app.setErrorHandler((e: Error, _req: FastifyRequest, res: FastifyReply) => {
 
 logger(app, errorLogFilePath);
 
+app.log.debug('Example Debug log');
+app.log.warn('Example warn log');
+
 // Promise.reject(Error('Oops!'));
 // throw Error('Oops!');
 
