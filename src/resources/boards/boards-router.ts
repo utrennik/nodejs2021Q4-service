@@ -1,10 +1,15 @@
-const {
+import {
+  FastifyInstance,
+  FastifyPluginOptions,
+  FastifyPluginCallback,
+} from 'fastify';
+import {
   getAllBoards,
   getBoardByID,
   postBoard,
   updateBoard,
   deleteBoard,
-} = require('./boards-service');
+} from './boards-service';
 
 const typeString = { type: 'string' };
 
@@ -92,7 +97,17 @@ const deleteBoardOpts = {
   handler: deleteBoard,
 };
 
-const boardsRouter = (fastify, options, done) => {
+/**
+ * Returns the Fastify Plugin Callback for (boards route)
+ * @param fastify Fastify Instance
+ * @param _ Fastify plugin options object
+ * @returns Fastify plugin callback
+ */
+const boardsRouter: FastifyPluginCallback = async (
+  fastify: FastifyInstance,
+  _: FastifyPluginOptions,
+  done
+) => {
   fastify.get('/', getAllBoardsOpts);
   fastify.get('/:id', getBoardOpts);
   fastify.post('/', postBoardOpts);
@@ -101,4 +116,4 @@ const boardsRouter = (fastify, options, done) => {
   done();
 };
 
-module.exports = boardsRouter;
+export default boardsRouter;

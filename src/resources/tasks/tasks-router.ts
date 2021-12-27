@@ -1,10 +1,15 @@
-const {
+import {
+  FastifyInstance,
+  FastifyPluginOptions,
+  FastifyPluginCallback,
+} from 'fastify';
+import {
   getTasksByBoardId,
   getTask,
   postTask,
   updateTask,
   deleteTask,
-} = require('./tasks-service');
+} from './tasks-service';
 
 const typeString = { type: 'string' };
 const typeStringOrNull = { type: ['string', 'null'] };
@@ -95,7 +100,17 @@ const deleteTaskOpts = {
   handler: deleteTask,
 };
 
-const tasksRouter = (fastify, options, done) => {
+/**
+ * Returns the Fastify Plugin Callback (tasks route)
+ * @param fastify Fastify Instance
+ * @param _ Fastify plugin options object
+ * @returns Fastify plugin callback
+ */
+const tasksRouter: FastifyPluginCallback = (
+  fastify: FastifyInstance,
+  _: FastifyPluginOptions,
+  done
+) => {
   fastify.get('/:boardId/tasks', getTasksByIdOpts);
   fastify.get('/:boardId/tasks/:taskId', getTaskOpts);
   fastify.post('/:boardId/tasks', postTaskOpts);
@@ -104,4 +119,4 @@ const tasksRouter = (fastify, options, done) => {
   done();
 };
 
-module.exports = tasksRouter;
+export default tasksRouter;

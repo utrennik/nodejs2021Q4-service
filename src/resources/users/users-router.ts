@@ -1,10 +1,15 @@
-const {
+import {
+  FastifyInstance,
+  FastifyPluginOptions,
+  FastifyPluginCallback,
+} from 'fastify';
+import {
   getAllUsers,
   getUserByID,
   postUser,
   updateUser,
   deleteUser,
-} = require('./users-service');
+} from './users-service';
 
 const typeString = { type: 'string' };
 const typeUser = {
@@ -85,7 +90,17 @@ const deleteUserOpts = {
   handler: deleteUser,
 };
 
-const usersRouter = (fastify, options, done) => {
+/**
+ * Returns the Fastify Plugin Callback (users route)
+ * @param fastify Fastify Instance
+ * @param _ Fastify plugin options object
+ * @returns Fastify plugin callback
+ */
+const usersRouter: FastifyPluginCallback = (
+  fastify: FastifyInstance,
+  _: FastifyPluginOptions,
+  done
+) => {
   fastify.get('/', getAllUsersOpts);
   fastify.get('/:id', getUserOpts);
   fastify.post('/', postUserOpts);
@@ -94,4 +109,4 @@ const usersRouter = (fastify, options, done) => {
   done();
 };
 
-module.exports = usersRouter;
+export default usersRouter;
