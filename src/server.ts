@@ -2,8 +2,10 @@ import config from './common/config';
 import app from './app';
 
 const PORT = config.PORT || 4000;
+const HOST = config.HOST;
 
 app.listen(
   PORT,
-  () => console.log(`App is running on http://localhost:${PORT}`) // eslint-disable-line no-console
+  HOST,
+  () => console.log(`App is running on ${HOST}:${PORT}`) // eslint-disable-line no-console
 );

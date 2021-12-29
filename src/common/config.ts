@@ -38,6 +38,7 @@ const config = {
     INTERNAL_SERVER_ERROR: 500,
   },
   loggingLevelCode: +loggingLevel,
+  HOST: '0.0.0.0',
 };
 
 export default config;
