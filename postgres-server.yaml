@@ -17,7 +17,7 @@ services:
   postgres:
     build: ./database
     volumes:
-      - './db:/usr/db'
+      - './database/db/:/usr/db'
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
