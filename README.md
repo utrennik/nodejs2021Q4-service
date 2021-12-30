@@ -4,12 +4,23 @@
 
 - Git - [Download & Install Git](https://git-scm.com/downloads).
 - Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
+- Docker = [Download & Install Docker](https://docs.docker.com/desktop/).
 
 ## Downloading
 
 ```
 git clone {repository URL}
 ```
+
+# To start in Docker:
+
+## To start app and database:
+
+```
+docker compose -f postgres-server.yaml up
+```
+
+# To start the server app locally:
 
 ## Installing NPM modules
 
