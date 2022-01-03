@@ -104,6 +104,7 @@ const deleteTaskOpts = {
  * Returns the Fastify Plugin Callback (tasks route)
  * @param fastify Fastify Instance
  * @param _ Fastify plugin options object
+ * @param done finish callback
  * @returns Fastify plugin callback
  */
 const tasksRouter: FastifyPluginCallback = (

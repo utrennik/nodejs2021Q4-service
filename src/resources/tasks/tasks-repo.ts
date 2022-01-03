@@ -26,7 +26,7 @@ const deleteTasksByBoardId = async (id: string): Promise<void> => {
 
 /**
  * Unassigns Tasks associated with User by userId
- * @param id User id
+ * @param userId User id
  * @returns void (Promise)
  */
 const unassignTasks = async (userId: string): Promise<void> => {
