@@ -1,5 +1,6 @@
 import path from 'path';
 import { fastify, FastifyReply, FastifyRequest, FastifyError } from 'fastify';
+// import { Client, Pool } from 'pg';
 import usersRouter from './resources/users/users-router';
 import boardsRouter from './resources/boards/boards-router';
 import tasksRouter from './resources/tasks/tasks-router';
@@ -46,5 +47,20 @@ app.log.warn('Example warn log');
 app.register(usersRouter, { prefix: '/users' });
 app.register(boardsRouter, { prefix: '/boards' });
 app.register(tasksRouter, { prefix: '/boards' });
+
+// TODO: implement DB storage, check here DB container connectivity
+
+// const { poolConfing } = config;
+
+// const pool = new Pool(poolConfing);
+
+// pool
+//   .connect()
+//   .then(() => {
+//     console.log('DB client connected');
+//   })
+//   .catch((e) => {
+//     console.log(`DB NOT CONNECTED: ${e}`);
+//   });
 
 export default app;
