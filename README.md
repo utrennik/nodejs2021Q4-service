@@ -12,7 +12,7 @@
 git clone {repository URL}
 ```
 
-# To start in Docker:
+# Getting started:
 
 ## To start app and database:
 
@@ -20,27 +20,23 @@ git clone {repository URL}
 docker compose -f postgres-server.yaml up
 ```
 
-# To start the server app locally:
+## Storage
 
-## Installing NPM modules
-
-```
-npm install
-```
-
-## Running application
+Database volume stored in:
 
 ```
-npm start
+./database/db
 ```
 
-After starting the app on port (4000 as default) you can open
-in your browser OpenAPI documentation by typing http://localhost:4000/doc/.
-For more information about OpenAPI/Swagger please visit https://swagger.io/.
+Logs volume stored in:
+
+```
+./logs
+```
 
 ## Testing
 
-After application running open new terminal and enter:
+When application is running open new terminal and type:
 
 To run all tests without authorization
 
