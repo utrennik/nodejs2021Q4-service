@@ -1,6 +1,6 @@
 import path from 'path';
 import { fastify, FastifyReply, FastifyRequest, FastifyError } from 'fastify';
-// import { Client, Pool } from 'pg';
+// import { Pool } from 'pg';
 import usersRouter from './resources/users/users-router';
 import boardsRouter from './resources/boards/boards-router';
 import tasksRouter from './resources/tasks/tasks-router';
@@ -60,7 +60,7 @@ app.register(tasksRouter, { prefix: '/boards' });
 //     console.log('DB client connected');
 //   })
 //   .catch((e) => {
-//     console.log(`DB NOT CONNECTED: ${e}`);
+//     console.log(`DB client NOT connected: ${e}`);
 //   });
 
 export default app;
