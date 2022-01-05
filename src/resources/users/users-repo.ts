@@ -1,13 +1,19 @@
 import { IUserData } from './types';
 import User from './user-model';
-
-const users: User[] = [];
+import UserEntity from '../../entities/user-entity';
+import getRepo from '../../common/getrepo';
 
 /**
  * Returns all Users in the repo (Promise)
  * @returns All Users (Promise)
  */
-const getAllUsers = async (): Promise<User[]> => users;
+const getAllUsers = async (): Promise<User[]> => {
+  const repo = getRepo(UserEntity);
+
+  const users = await repo.find({ where: {} });
+
+  return users;
+};
 
 /**
  * Returns the User by User id
@@ -15,7 +21,9 @@ const getAllUsers = async (): Promise<User[]> => users;
  * @returns User with given id (Promise)
  */
 const getUserByID = async (id: string): Promise<User | null> => {
-  const resultUser: User | undefined = users.find((user) => user.id === id);
+  const repo = getRepo(UserEntity);
+
+  const resultUser: User | undefined = await repo.findOne(id);
   return resultUser || null;
 };
 
@@ -25,7 +33,11 @@ const getUserByID = async (id: string): Promise<User | null> => {
  * @returns added user (Promise)
  */
 const postUser = async (user: User): Promise<User> => {
-  users.push(user);
+  const repo = getRepo(UserEntity);
+
+  const newUser = await repo.create(user);
+
+  await repo.save(newUser);
   return user;
 };
 
@@ -39,22 +51,17 @@ const updateUser = async (
   id: string,
   newUserData: IUserData
 ): Promise<User | null> => {
-  let userIndex: number | undefined;
+  const repo = getRepo(UserEntity);
 
-  const oldUserData: User | undefined = users.find((user, i) => {
-    if (user.id === id) {
-      userIndex = i;
-      return true;
-    }
-    return false;
-  });
+  const resultUser: User | undefined = await repo.findOne(id);
 
-  if (userIndex !== undefined) {
-    users[userIndex] = { ...oldUserData, ...newUserData } as User;
-    return users[userIndex];
-  }
+  if (!resultUser) return null;
 
-  return null;
+  await repo.update(id, newUserData);
+
+  const updatedUser = await repo.findOne(id);
+
+  return updatedUser || null;
 };
 
 /**
@@ -63,13 +70,11 @@ const updateUser = async (
  * @returns true if the User is deleted or false if not found (Promise)
  */
 const deleteUser = async (id: string): Promise<boolean> => {
-  const userIndex: number = users.findIndex((user) => user.id === id);
+  const repo = getRepo(UserEntity);
 
-  if (userIndex !== -1) {
-    users.splice(userIndex, 1);
-    return true;
-  }
-  return false;
+  const deleteResult = await repo.delete(id);
+
+  return !!deleteResult.affected;
 };
 
 export default { getAllUsers, getUserByID, postUser, updateUser, deleteUser };

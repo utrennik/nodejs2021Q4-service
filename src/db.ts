@@ -1,27 +1,24 @@
-import { Connection, createConnection, getConnection } from 'typeorm';
+import { Connection, createConnection } from 'typeorm';
 import ormConfig from './common/ormconfig';
 
-const connectToDB = async () => {
-  const CONNECTION_NAME = 'postgres_db_connection';
+let dbConnection: Connection | undefined;
 
-  let connection: Connection | undefined;
-
+/**
+ * Initializes the database connection
+ * @returns Promise<void>
+ */
+const handleDBConnect = async (): Promise<void> => {
   try {
-    connection = getConnection(CONNECTION_NAME);
-  } catch (e) {}
+    if (!dbConnection) {
+      console.info('Creating new DB connection...');
+      dbConnection = await createConnection(ormConfig);
+    }
 
-  if (!connection) connection = await createConnection(ormConfig);
-
-  if (!connection.isConnected) await connection.connect();
-
-  return connection;
-};
-
-const handleDBConnect = async (): Promise<Connection | undefined> => {
-  try {
-    const connection = await connectToDB();
-    console.info('DB successfully connected');
-    return connection;
+    if (dbConnection && !dbConnection.isConnected) {
+      console.info('Connecting to DB...');
+      await dbConnection.connect();
+      console.info('DB successfully Connected...');
+    }
   } catch (e) {
     console.error(e);
     console.error('DB Error: DB is not connected!');
@@ -29,4 +26,4 @@ const handleDBConnect = async (): Promise<Connection | undefined> => {
   }
 };
 
-export default handleDBConnect;
+export { handleDBConnect };

@@ -1,12 +1,16 @@
 import config from './common/config';
 import app from './app';
-import handleDBConnect from './db';
+import { handleDBConnect } from './db';
 
 const PORT = config.PORT || 4000;
 const HOST = config.APP_HOST;
 
-const start = async () => {
-  const dbConnection = await handleDBConnect();
+/**
+ * Runs the database initialization and starts the app
+ *  @returns Promise<void>
+ */
+const start = async (): Promise<void> => {
+  await handleDBConnect();
 
   app.listen(
     PORT,
