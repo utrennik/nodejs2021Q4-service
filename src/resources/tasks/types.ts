@@ -1,10 +1,10 @@
 export interface ITaskData {
   title: string;
   order: number;
-  description?: string | null;
-  userId?: string | null;
-  boardId?: string | null;
-  columnId?: string | null;
+  description: string | null;
+  userId: string | null;
+  boardId: string | null;
+  columnId: string | null;
 }
 
 export interface IGetTasksByBoardIdRequest {
