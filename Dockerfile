@@ -3,5 +3,5 @@ WORKDIR /usr/app
 COPY package*.json .
 RUN npm i
 COPY . .
-RUN npm run build
-CMD npm run start:prod
+RUN npm i -g nodemon
+CMD npm run start:dev
