@@ -45,7 +45,6 @@ const config = {
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.POSTGRES_DB,
     port: process.env.POSTGRES_PORT ? +process.env.POSTGRES_PORT : 5432,
-    pgdata: process.env.PGDATA,
     host: process.env.POSTGRES_HOST,
   },
 };

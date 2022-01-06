@@ -7,7 +7,8 @@ services:
     depends_on:
       - postgres
     volumes:
-      - './logs:/usr/app/logs'
+      - 'logs:/usr/app/logs'
+      - './src:/usr/app/src'
     environment:
       PORT: ${PORT}
       NODE_ENV: ${NODE_ENV}
@@ -17,13 +18,12 @@ services:
   postgres:
     build: ./database
     volumes:
-      - './database/db/:/usr/db'
+      - 'db:/var/lib/postgresql/data'
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_PORT: ${POSTGRES_PORT}
-      PGDATA: ${PGDATA}
     ports:
       - ${POSTGRES_PORT}:${POSTGRES_PORT}
     networks:
@@ -32,3 +32,6 @@ services:
 networks:
   postgres-app-network:
     driver: bridge
+volumes:
+  logs:
+  db:

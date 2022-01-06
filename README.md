@@ -17,21 +17,13 @@ git clone {repository URL}
 ## To start app and database:
 
 ```
-docker compose -f postgres-server.yaml up
+docker compose up
 ```
 
-## Storage
-
-Database volume stored in:
+## To start app locally:
 
 ```
-./database/db
-```
-
-Logs volume stored in:
-
-```
-./logs
+npm start
 ```
 
 ## Testing

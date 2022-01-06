@@ -48,7 +48,7 @@ app.register(usersRouter, { prefix: '/users' });
 app.register(boardsRouter, { prefix: '/boards' });
 app.register(tasksRouter, { prefix: '/boards' });
 
-// TODO: implement DB storage, check here DB container connectivity
+// TODO: check here DB container connectivity
 
 // const { poolConfing } = config;
 
