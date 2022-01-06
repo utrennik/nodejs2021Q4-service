@@ -1,4 +1,5 @@
 import { Connection, createConnection } from 'typeorm';
+import 'reflect-metadata';
 import ormConfig from './common/ormconfig';
 
 let dbConnection: Connection | undefined;
