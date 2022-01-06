@@ -17,7 +17,7 @@ git clone {repository URL}
 ## To start app and database:
 
 ```
-docker compose -f postgres-server.yaml up
+docker compose up
 ```
 
 ## Storage
