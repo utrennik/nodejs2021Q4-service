@@ -10,7 +10,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon",
-    "start:dev": "nodemon --legacy-watch",
+    "start:dev": "nodemon --legacy-watch --exitcrash",
     "start:prod": "node build/server.js",
     "build": "tsc --project ./",
     "lint": "eslint --ext .js,.ts --fix src/",
