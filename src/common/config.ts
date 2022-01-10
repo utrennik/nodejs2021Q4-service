@@ -39,15 +39,6 @@ const config = {
   },
   loggingLevelCode: +loggingLevel,
   APP_HOST: process.env.APP_HOST || '0.0.0.0',
-
-  poolConfing: {
-    user: process.env.POSTGRES_USER,
-    password: process.env.POSTGRES_PASSWORD,
-    database: process.env.POSTGRES_DB,
-    port: process.env.POSTGRES_PORT ? +process.env.POSTGRES_PORT : 5432,
-    pgdata: process.env.PGDATA,
-    host: process.env.POSTGRES_HOST,
-  },
 };
 
 export default config;
