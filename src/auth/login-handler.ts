@@ -1,5 +1,6 @@
 import { FastifyRequest, FastifyReply } from 'fastify';
 import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 import ClientError from '../errors/client-error';
 import { ILoginRequest } from '../resources/users/types';
 import usersRepo from '../resources/users/users-repo';
@@ -18,7 +19,7 @@ const loginHandler = async (
   if (!user) {
     throw new ClientError(
       `User with login ${login} doesn't exist`,
-      codes.NOT_FOUND
+      codes.FORBIDDEN
     );
   }
 
@@ -30,7 +31,11 @@ const loginHandler = async (
     throw new ClientError(`Incorrect password`, codes.FORBIDDEN);
   }
 
-  res.send({ token: 'fsdfsdfsdfs' });
+  const tokenData = { userId: user.id, login: user.login };
+
+  const token = await jwt.sign(tokenData, config.JWT_SECRET_KEY);
+
+  res.send({ token });
 };
 
 export default loginHandler;

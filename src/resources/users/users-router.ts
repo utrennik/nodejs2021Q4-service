@@ -67,6 +67,7 @@ const postUserOpts = {
       201: typeUser,
     },
   },
+  preHandler: checkJWT,
   handler: postUser,
 };
 

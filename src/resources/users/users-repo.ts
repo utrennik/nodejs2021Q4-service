@@ -2,6 +2,7 @@ import { IUserData } from './types';
 import User from './user-model';
 import UserEntity from '../../entities/user-entity';
 import getRepo from '../../common/getrepo';
+import encryptPass from '../../common/encrypt-pass';
 
 /**
  * Returns all Users in the repo (Promise)
@@ -49,7 +50,9 @@ const getUserByLogin = async (userLogin: string): Promise<User | null> => {
 const postUser = async (user: User): Promise<User> => {
   const repo = getRepo(UserEntity);
 
-  const newUser = await repo.create(user);
+  const encryptedPass = await encryptPass(user.password);
+
+  const newUser = await repo.create({ ...user, password: encryptedPass });
 
   await repo.save(newUser);
   return user;
