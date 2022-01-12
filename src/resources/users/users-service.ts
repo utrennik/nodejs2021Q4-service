@@ -11,6 +11,7 @@ import {
 } from './types';
 import ClientError from '../../errors/client-error';
 import config from '../../common/config';
+import encryptPass from '../../common/encrypt-pass';
 
 const codes = config.HTTP_CODES;
 
@@ -58,7 +59,15 @@ const postUser = async (
   req: FastifyRequest<IPostUserRequest>,
   res: FastifyReply
 ): Promise<void> => {
-  const user = new User({ ...req.body });
+  let user: User;
+  const password = req.body.password;
+
+  if (password) {
+    const encryptedPass = await encryptPass(password);
+    user = new User({ ...req.body, password: encryptedPass });
+  } else {
+    user = new User({ ...req.body });
+  }
 
   const createdUser: User = await usersRepo.postUser(user);
   res.status(codes.CREATED).send(createdUser);

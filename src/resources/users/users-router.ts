@@ -3,6 +3,7 @@ import {
   FastifyPluginOptions,
   FastifyPluginCallback,
 } from 'fastify';
+import checkJWT from '../../auth/check-jwt';
 import {
   getAllUsers,
   getUserByID,
@@ -20,6 +21,15 @@ const typeUser = {
     login: typeString,
   },
 };
+const typeUserWithPass = {
+  type: 'object',
+  properties: {
+    id: typeString,
+    name: typeString,
+    login: typeString,
+    password: typeString,
+  },
+};
 
 const getAllUsersOpts = {
   schema: {
@@ -30,7 +40,7 @@ const getAllUsersOpts = {
       },
     },
   },
-
+  preHandler: checkJWT,
   handler: getAllUsers,
 };
 
@@ -43,13 +53,14 @@ const getUserOpts = {
       200: typeUser,
     },
   },
+  preHandler: checkJWT,
   handler: getUserByID,
 };
 
 const postUserOpts = {
   schema: {
     body: {
-      ...typeUser,
+      ...typeUserWithPass,
       required: ['name'],
     },
     response: {
@@ -65,19 +76,14 @@ const putUserOpts = {
       id: typeString,
     },
     body: {
-      type: 'object',
-      properties: {
-        id: typeString,
-        name: typeString,
-        login: typeString,
-        password: typeString,
-      },
+      ...typeUserWithPass,
       required: ['name'],
     },
     response: {
       200: typeUser,
     },
   },
+  preHandler: checkJWT,
   handler: updateUser,
 };
 
@@ -87,6 +93,7 @@ const deleteUserOpts = {
       id: typeString,
     },
   },
+  preHandler: checkJWT,
   handler: deleteUser,
 };
 

@@ -28,6 +28,20 @@ const getUserByID = async (id: string): Promise<User | null> => {
 };
 
 /**
+ * Returns the User by User login
+ * @param login User login
+ * @returns User with given login (Promise)
+ */
+const getUserByLogin = async (userLogin: string): Promise<User | null> => {
+  const repo = getRepo(UserEntity);
+
+  const resultUser: User | undefined = await repo.findOne({
+    where: { login: userLogin },
+  });
+  return resultUser || null;
+};
+
+/**
  * Adds a User to repository
  * @param user user object
  * @returns added user (Promise)
@@ -77,4 +91,11 @@ const deleteUser = async (id: string): Promise<boolean> => {
   return !!deleteResult.affected;
 };
 
-export default { getAllUsers, getUserByID, postUser, updateUser, deleteUser };
+export default {
+  getAllUsers,
+  getUserByID,
+  postUser,
+  updateUser,
+  deleteUser,
+  getUserByLogin,
+};

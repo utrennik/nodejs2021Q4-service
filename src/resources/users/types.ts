@@ -8,6 +8,15 @@ export interface IUserData {
   password?: string;
 }
 
+export interface ILoginData {
+  login: string;
+  password: string;
+}
+
+export interface ILoginRequest {
+  Body: ILoginData;
+}
+
 export interface IGetUserByIdRequest {
   Params: {
     id: string;
