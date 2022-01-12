@@ -47,12 +47,18 @@ const getUserByLogin = async (userLogin: string): Promise<User | null> => {
  * @param user user object
  * @returns added user (Promise)
  */
-const postUser = async (user: User): Promise<User> => {
+const postUser = async (user: User): Promise<User | null> => {
   const repo = getRepo(UserEntity);
+
+  const userWithSameLogin = await getUserByLogin(user.login);
+
+  if (userWithSameLogin) return null;
 
   const encryptedPass = await encryptPass(user.password);
 
   const newUser = await repo.create({ ...user, password: encryptedPass });
+
+  console.warn(`FOR CROSSCHECK! Saved user data: ${JSON.stringify(newUser)}`);
 
   await repo.save(newUser);
   return user;

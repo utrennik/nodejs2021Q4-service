@@ -33,6 +33,8 @@ const loginHandler = async (
 
   const tokenData = { userId: user.id, login: user.login };
 
+  console.warn(`FOR CROSSCHECK! Token payload: ${JSON.stringify(tokenData)}`);
+
   const token = await jwt.sign(tokenData, config.JWT_SECRET_KEY);
 
   res.send({ token });

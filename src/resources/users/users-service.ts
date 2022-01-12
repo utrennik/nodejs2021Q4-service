@@ -60,7 +60,15 @@ const postUser = async (
 ): Promise<void> => {
   const user = new User({ ...req.body });
 
-  const createdUser: User = await usersRepo.postUser(user);
+  const createdUser: User | null = await usersRepo.postUser(user);
+
+  if (!createdUser) {
+    throw new ClientError(
+      `There is already a user with login ${user.login}`,
+      codes.BAD_REQUEST
+    );
+  }
+
   res.status(codes.CREATED).send(createdUser);
 };
 
