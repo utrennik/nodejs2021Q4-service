@@ -27,8 +27,8 @@ const config = {
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
   AUTH_MODE: process.env.AUTH_MODE === 'true',
   loggingLevel: loggingLevels[loggingLevel as keyof object],
-  COMMON_LOG_FILE: '../common_log.txt',
-  ERROR_LOG_FILE: '../error_log.txt',
+  COMMON_LOG_FILE: '../logs/common_log.txt',
+  ERROR_LOG_FILE: '../logs/error_log.txt',
   HTTP_CODES: {
     OK: 200,
     CREATED: 201,
@@ -38,6 +38,15 @@ const config = {
     INTERNAL_SERVER_ERROR: 500,
   },
   loggingLevelCode: +loggingLevel,
+  APP_HOST: process.env.APP_HOST || '0.0.0.0',
+
+  poolConfing: {
+    user: process.env.POSTGRES_USER,
+    password: process.env.POSTGRES_PASSWORD,
+    database: process.env.POSTGRES_DB,
+    port: process.env.POSTGRES_PORT ? +process.env.POSTGRES_PORT : 5432,
+    host: process.env.POSTGRES_HOST,
+  },
 };
 
 export default config;
