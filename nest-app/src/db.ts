@@ -20,8 +20,8 @@ const handleDBConnect = async (): Promise<void> => {
       await dbConnection.connect();
     }
     console.info('DB successfully Connected...');
-    await dbConnection.runMigrations();
-    console.info('Migrations completed...');
+    // await dbConnection.runMigrations();
+    // console.info('Migrations completed...');
   } catch (e) {
     console.error(e);
     console.error('DB Error: DB is not connected!');
