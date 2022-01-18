@@ -20,6 +20,12 @@ git clone {repository URL}
 docker compose up
 ```
 
+## To run tests and linter please install dependencies locally
+
+```
+npm i
+```
+
 ## Testing
 
 When application is running open new terminal and type:
