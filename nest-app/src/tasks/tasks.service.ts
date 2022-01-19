@@ -19,9 +19,9 @@ export class TasksService {
    * @returns created Task (Promise)
    */
   async create(boardId: string, createTaskDto: CreateTaskDto): Promise<Task> {
-    if (!createTaskDto.boardId) createTaskDto.boardId = boardId;
+    const newTaskData = { ...createTaskDto, boardId };
 
-    const newTask = await this.repo.create(createTaskDto);
+    const newTask = await this.repo.create(newTaskData);
 
     await this.repo.save(newTask);
 
@@ -52,6 +52,7 @@ export class TasksService {
     if (!resultTask) throw new NotFoundException(`Task not found`);
     return resultTask;
   }
+
   /**
    * Updates an existing task
    * @param boardId id of the Board to find a Task
