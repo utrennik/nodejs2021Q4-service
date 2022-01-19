@@ -1,5 +1,6 @@
 import { Repository } from 'typeorm';
 import {
+  BadRequestException,
   Injectable,
   InternalServerErrorException,
   NotFoundException,
@@ -9,6 +10,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import User from './entities/user.entity';
 import { UpdateUserReturnDto } from './dto/update-user-return.dto';
+import encryptPass from '../auth/encrypt-pass';
 
 @Injectable()
 export class UsersService {
@@ -24,11 +26,27 @@ export class UsersService {
    * @returns added User (Promise)
    */
   async create(createUserDto: CreateUserDto): Promise<UpdateUserReturnDto> {
-    const newUser = await this.repo.create(createUserDto);
+    const { login } = createUserDto;
+
+    const userWithSameLogin: User | undefined = await this.findOneByLogin(
+      login,
+    );
+
+    if (userWithSameLogin)
+      throw new BadRequestException(`Error! User with login ${login} exists!`);
+
+    const encryptedPass = await encryptPass(createUserDto.password);
+
+    const newUser = await this.repo.create({
+      ...createUserDto,
+      password: encryptedPass,
+    });
 
     await this.repo.save(newUser);
 
     const userDataToReturn = new UpdateUserReturnDto({ ...newUser });
+
+    console.warn(`FOR CROSSCHECK! Saved user data: ${JSON.stringify(newUser)}`);
 
     return userDataToReturn;
   }
@@ -103,5 +121,11 @@ export class UsersService {
       throw new InternalServerErrorException(
         `Error: user id:${id} has not been deleted`,
       );
+  }
+
+  async findOneByLogin(login: string): Promise<User | undefined> {
+    const userWithSameLogin = this.repo.findOne({ login });
+
+    return userWithSameLogin;
   }
 }

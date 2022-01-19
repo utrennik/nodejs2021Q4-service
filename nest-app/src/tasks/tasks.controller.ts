@@ -6,13 +6,16 @@ import {
   Put,
   Param,
   Delete,
+  UseGuards,
 } from '@nestjs/common';
 import { ValidationPipe } from '../common/validation.pipe';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
+import { AuthGuard } from "../auth/auth.guard";
 
 @Controller('boards')
+@UseGuards(AuthGuard)
 export class TasksController {
   constructor(private readonly tasksService: TasksService) {}
 
@@ -40,7 +43,6 @@ export class TasksController {
     @Param('taskId') taskId: string,
     @Body(new ValidationPipe()) updateTaskDto: UpdateTaskDto,
   ) {
-    console.log(`DATA To UOPDATE TASK: ${JSON.stringify(updateTaskDto)}`);
     return this.tasksService.update(boardId, taskId, updateTaskDto);
   }
 

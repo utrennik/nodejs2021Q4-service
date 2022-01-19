@@ -6,6 +6,7 @@ import { handleDBConnect } from './db';
 async function bootstrap() {
   await handleDBConnect();
   const app = await NestFactory.create(AppModule);
+
   await app.listen(config.PORT, config.APP_HOST);
 }
 bootstrap();

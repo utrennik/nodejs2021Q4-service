@@ -7,20 +7,35 @@ import {
   Param,
   Delete,
   HttpCode,
+  UseGuards,
 } from '@nestjs/common';
 import config from '../common/config';
 import { ValidationPipe } from '../common/validation.pipe';
 import { UsersService } from './users.service';
-import { TasksService } from "../tasks/tasks.service";
+import { TasksService } from '../tasks/tasks.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { AuthGuard } from "../auth/auth.guard";
 
 @Controller('users')
+@UseGuards(AuthGuard)
 export class UsersController {
   constructor(
     private readonly usersService: UsersService,
     private readonly tasksService: TasksService,
-  ) {}
+  ) {
+    // Initial admin for tests
+    const adminDto: CreateUserDto = {
+      name: 'admin',
+      login: 'admin',
+      password: 'admin',
+    };
+
+    (async () => {
+      const admin = await this.usersService.findOneByLogin(adminDto.login);
+      if (!admin) await this.usersService.create(adminDto);
+    })();
+  }
 
   @Post()
   create(@Body(new ValidationPipe()) createUserDto: CreateUserDto) {

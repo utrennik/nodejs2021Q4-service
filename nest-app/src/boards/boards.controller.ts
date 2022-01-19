@@ -7,15 +7,18 @@ import {
   Param,
   Delete,
   HttpCode,
+  UseGuards,
 } from '@nestjs/common';
 import { TasksService } from '../tasks/tasks.service';
 import { ValidationPipe } from '../common/validation.pipe';
 import { BoardsService } from './boards.service';
 import { CreateBoardDto } from './dto/create-board.dto';
 import { UpdateBoardDto } from './dto/update-board.dto';
+import { AuthGuard } from "../auth/auth.guard";
 import config from '../common/config';
 
 @Controller('boards')
+@UseGuards(AuthGuard)
 export class BoardsController {
   constructor(
     private readonly boardsService: BoardsService,
