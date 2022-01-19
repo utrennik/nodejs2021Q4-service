@@ -11,12 +11,16 @@ import {
 import config from '../common/config';
 import { ValidationPipe } from '../common/validation.pipe';
 import { UsersService } from './users.service';
+import { TasksService } from "../tasks/tasks.service";
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 
 @Controller('users')
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
+  constructor(
+    private readonly usersService: UsersService,
+    private readonly tasksService: TasksService,
+  ) {}
 
   @Post()
   create(@Body(new ValidationPipe()) createUserDto: CreateUserDto) {
@@ -43,7 +47,9 @@ export class UsersController {
 
   @Delete(':id')
   @HttpCode(config.HTTP_CODES.NO_CONTENT)
-  remove(@Param('id') id: string) {
-    return this.usersService.remove(id);
+  async remove(@Param('id') id: string) {
+    await this.usersService.remove(id);
+
+    await this.tasksService.unassgnTasks(id);
   }
 }
