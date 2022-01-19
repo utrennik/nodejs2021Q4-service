@@ -3,6 +3,7 @@ import {
   FastifyPluginOptions,
   FastifyPluginCallback,
 } from 'fastify';
+import checkJWT from '../../auth/check-jwt';
 import {
   getAllBoards,
   getBoardByID,
@@ -43,7 +44,7 @@ const getAllBoardsOpts = {
       },
     },
   },
-
+  preHandler: checkJWT,
   handler: getAllBoards,
 };
 
@@ -56,6 +57,7 @@ const getBoardOpts = {
       200: typeBoard,
     },
   },
+  preHandler: checkJWT,
   handler: getBoardByID,
 };
 
@@ -69,6 +71,7 @@ const postBoardOpts = {
       201: typeBoard,
     },
   },
+  preHandler: checkJWT,
   handler: postBoard,
 };
 
@@ -85,6 +88,7 @@ const putBoardOpts = {
       200: typeBoard,
     },
   },
+  preHandler: checkJWT,
   handler: updateBoard,
 };
 
@@ -94,6 +98,7 @@ const deleteBoardOpts = {
       id: typeString,
     },
   },
+  preHandler: checkJWT,
   handler: deleteBoard,
 };
 

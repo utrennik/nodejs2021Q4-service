@@ -3,6 +3,7 @@ import {
   FastifyPluginOptions,
   FastifyPluginCallback,
 } from 'fastify';
+import checkJWT from '../../auth/check-jwt';
 import {
   getTasksByBoardId,
   getTask,
@@ -39,7 +40,7 @@ const getTasksByIdOpts = {
       },
     },
   },
-
+  preHandler: checkJWT,
   handler: getTasksByBoardId,
 };
 
@@ -53,7 +54,7 @@ const getTaskOpts = {
       200: typeTask,
     },
   },
-
+  preHandler: checkJWT,
   handler: getTask,
 };
 
@@ -70,6 +71,7 @@ const postTaskOpts = {
       201: typeTask,
     },
   },
+  preHandler: checkJWT,
   handler: postTask,
 };
 
@@ -87,6 +89,7 @@ const putTaskOpts = {
       200: typeTask,
     },
   },
+  preHandler: checkJWT,
   handler: updateTask,
 };
 
@@ -97,6 +100,7 @@ const deleteTaskOpts = {
       taskId: typeString,
     },
   },
+  preHandler: checkJWT,
   handler: deleteTask,
 };
 
