@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
 
 @Entity({ name: 'task' })
-export default class TaskEntity extends BaseEntity {
+export default class Task extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -9,17 +9,17 @@ export default class TaskEntity extends BaseEntity {
   title: string;
 
   @Column({ nullable: true, type: 'integer' })
-  order: number | null;
+  order?: number | null;
 
   @Column({ nullable: true, type: 'text' })
-  description: string | null;
+  description?: string | null;
 
   @Column({ nullable: true, type: 'text' })
-  userId: string | null;
+  userId?: string | null;
 
-  @Column({ nullable: true, type: 'uuid' })
-  boardId: string | null;
+  @Column({ nullable: true, type: 'text' })
+  boardId?: string | null;
 
-  @Column({ nullable: true, type: 'uuid' })
-  columnId: string | null;
+  @Column({ nullable: true, type: 'text' })
+  columnId?: string | null;
 }

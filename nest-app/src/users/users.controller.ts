@@ -1,4 +1,3 @@
-import { ValidationPipe } from './../common/validation.pipe';
 import {
   Controller,
   Get,
@@ -8,12 +7,12 @@ import {
   Param,
   Delete,
   HttpCode,
-  ParseUUIDPipe,
 } from '@nestjs/common';
+import config from '../common/config';
+import { ValidationPipe } from '../common/validation.pipe';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import config from 'src/common/config';
 
 @Controller('users')
 export class UsersController {

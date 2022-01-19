@@ -1,14 +1,13 @@
 import { Repository } from 'typeorm';
 import {
-  BadRequestException,
   Injectable,
   InternalServerErrorException,
   NotFoundException,
 } from '@nestjs/common';
+import getRepo from '../common/getrepo';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import User from './entities/user.entity';
-import getRepo from 'src/common/getrepo';
 
 @Injectable()
 export class UsersService {
@@ -17,6 +16,7 @@ export class UsersService {
   constructor() {
     this.repo = getRepo(User);
   }
+
   /**
    * Adds a User to repository
    * @param createUserDto CreateUserDto
