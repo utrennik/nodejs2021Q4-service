@@ -3,11 +3,11 @@ import {
   Get,
   Post,
   Body,
-  Patch,
+  Put,
   Param,
   Delete,
 } from '@nestjs/common';
-import { ValidationPipe } from "../common/validation.pipe";
+import { ValidationPipe } from '../common/validation.pipe';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
@@ -34,12 +34,13 @@ export class TasksController {
     return this.tasksService.findOne(boardId, taskId);
   }
 
-  @Patch(':boardId/tasks/:taskId')
+  @Put(':boardId/tasks/:taskId')
   update(
     @Param('boardId') boardId: string,
     @Param('taskId') taskId: string,
     @Body(new ValidationPipe()) updateTaskDto: UpdateTaskDto,
   ) {
+    console.log(`DATA To UOPDATE TASK: ${JSON.stringify(updateTaskDto)}`);
     return this.tasksService.update(boardId, taskId, updateTaskDto);
   }
 

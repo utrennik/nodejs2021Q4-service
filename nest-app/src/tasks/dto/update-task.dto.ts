@@ -3,6 +3,10 @@ import { IsNumber, IsOptional, IsString } from 'class-validator';
 export class UpdateTaskDto {
   @IsString()
   @IsOptional()
+  public id?: string;
+
+  @IsString()
+  @IsOptional()
   public title?: string;
 
   @IsNumber()
@@ -12,13 +16,12 @@ export class UpdateTaskDto {
   @IsOptional()
   public description?: string;
 
-  @IsString()
   @IsOptional()
-  public userId?: string;
+  public userId?: string | null;
 
-  @IsString()
-  public boardId: string;
+  @IsOptional()
+  public boardId: string | null;
 
-  @IsString()
-  public columnId: string;
+  @IsOptional()
+  public columnId: string | null;
 }
