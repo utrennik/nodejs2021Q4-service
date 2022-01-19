@@ -8,6 +8,7 @@ import getRepo from '../common/getrepo';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import User from './entities/user.entity';
+import { UpdateUserReturnDto } from './dto/update-user-return.dto';
 
 @Injectable()
 export class UsersService {
@@ -22,12 +23,14 @@ export class UsersService {
    * @param createUserDto CreateUserDto
    * @returns added User (Promise)
    */
-  async create(createUserDto: CreateUserDto): Promise<User> {
+  async create(createUserDto: CreateUserDto): Promise<UpdateUserReturnDto> {
     const newUser = await this.repo.create(createUserDto);
 
     await this.repo.save(newUser);
 
-    return newUser;
+    const userDataToReturn = new UpdateUserReturnDto({ ...newUser });
+
+    return userDataToReturn;
   }
 
   /**
@@ -60,7 +63,10 @@ export class UsersService {
    * @param updateUserDto data to update User
    * @returns updated User or null if not found (Promise)
    */
-  async update(id: string, updateUserDto: UpdateUserDto): Promise<User> {
+  async update(
+    id: string,
+    updateUserDto: UpdateUserDto,
+  ): Promise<UpdateUserReturnDto> {
     const resultUser: User | undefined = await this.repo.findOne(id);
 
     if (!resultUser)
@@ -75,7 +81,9 @@ export class UsersService {
         `Error while updating user id:${id}`,
       );
 
-    return updatedUser;
+    const userDataToReturn = new UpdateUserReturnDto({ ...updatedUser });
+
+    return userDataToReturn;
   }
 
   /**
