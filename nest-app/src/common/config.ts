@@ -7,10 +7,10 @@ dotenv.config({
 
 const loggingLevels = {
   0: 'error',
-  1: 'warn',
-  2: 'info',
-  3: 'debug',
-  4: 'trace',
+  1: 'warning',
+  2: 'notice',
+  3: 'info',
+  4: 'debug',
 };
 
 const defaultLoggingLevel = '4';
@@ -27,8 +27,8 @@ const config = {
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
   AUTH_MODE: process.env.AUTH_MODE === 'true',
   loggingLevel: loggingLevels[loggingLevel as keyof object],
-  COMMON_LOG_FILE: '../logs/common_log.txt',
-  ERROR_LOG_FILE: '../logs/error_log.txt',
+  COMMON_LOG_FILE: './logs/common_log.txt',
+  ERROR_LOG_FILE: './logs/error_log.txt',
   HTTP_CODES: {
     OK: 200,
     CREATED: 201,
