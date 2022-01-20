@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable node/no-extraneous-import */
 import { Injectable, NestMiddleware, Logger } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 
@@ -34,7 +36,7 @@ export class LoggerMiddleware implements NestMiddleware {
 
       const firstDigit = `${statusCode}`[0];
 
-      if (firstDigit == '4' || firstDigit == '5') {
+      if (firstDigit === '4' || firstDigit === '5') {
         this.logger.error(reqInfo);
       } else {
         this.logger.log(reqInfo);

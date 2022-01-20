@@ -1,3 +1,4 @@
+import { HttpExceptionFilter } from './exceptions/http-exception.filter';
 import { WinstonModule } from 'nest-winston';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
@@ -10,7 +11,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     logger: WinstonModule.createLogger(loggerSettings),
   });
-
+  app.useGlobalFilters(new HttpExceptionFilter());
   await app.listen(config.PORT, config.APP_HOST);
 }
 bootstrap();
