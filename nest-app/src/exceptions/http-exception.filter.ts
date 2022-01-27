@@ -1,10 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable node/no-extraneous-import */
 import {
   ExceptionFilter,
   Catch,
   ArgumentsHost,
   HttpException,
 } from '@nestjs/common';
-import { Request, Response } from 'express';
+import { Response } from 'express';
 
 @Catch(HttpException)
 export class HttpExceptionFilter implements ExceptionFilter {

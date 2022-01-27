@@ -39,6 +39,7 @@ const config = {
   },
   loggingLevelCode: +loggingLevel,
   APP_HOST: process.env.APP_HOST || '0.0.0.0',
+  STATIC_FILES_DIR: process.env.STATIC_FILES_DIR || './',
 };
 
 export default config;

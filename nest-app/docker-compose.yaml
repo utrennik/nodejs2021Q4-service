@@ -8,10 +8,12 @@ services:
       - postgres
     volumes:
       - 'logs:/usr/app/logs'
+      - 'static:/usr/app/static'
       - './src:/usr/app/src'
     environment:
       PORT: ${PORT}
       NODE_ENV: ${NODE_ENV}
+      STATIC_FILES_DIR: ${STATIC_FILES_DIR}
     networks:
       - postgres-app-network
     restart: unless-stopped
@@ -35,3 +37,4 @@ networks:
 volumes:
   logs:
   db:
+  static:

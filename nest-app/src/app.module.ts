@@ -6,9 +6,10 @@ import { UsersModule } from './users/users.module';
 import { TasksModule } from './tasks/tasks.module';
 import { BoardsModule } from './boards/boards.module';
 import { LoginModule } from './login/login.module';
+import { FilesModule } from './files/files.module';
 
 @Module({
-  imports: [UsersModule, TasksModule, BoardsModule, LoginModule],
+  imports: [UsersModule, TasksModule, BoardsModule, LoginModule, FilesModule],
   controllers: [AppController],
   providers: [AppService, Logger],
 })
