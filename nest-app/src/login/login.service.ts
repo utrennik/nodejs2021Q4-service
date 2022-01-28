@@ -1,7 +1,7 @@
 import { ForbiddenException, Injectable } from '@nestjs/common';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { UsersService } from "../users/users.service";
+import { UsersService } from '../users/users.service';
 import { LoginDto } from './dto/login.dto';
 import config from '../common/config';
 
@@ -13,7 +13,7 @@ export class LoginService {
     const user = await usersService.findOneByLogin(login);
 
     if (!user) {
-      throw new ForbiddenException(`User with login ${login} doesn't exist`);
+      throw new ForbiddenException(`Username or password incorrect.`);
     }
 
     const encryptedPassword = user.password;
@@ -21,7 +21,7 @@ export class LoginService {
     const isPasswordOk = await bcrypt.compare(password, encryptedPassword);
 
     if (!isPasswordOk) {
-      throw new ForbiddenException(`Incorrect password`);
+      throw new ForbiddenException(`Username or password incorrect.`);
     }
 
     const tokenData = { userId: user.id, login: user.login };
