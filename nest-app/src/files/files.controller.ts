@@ -1,4 +1,3 @@
-import { FilesService } from './files.service';
 import {
   Controller,
   Get,
@@ -10,6 +9,7 @@ import {
   StreamableFile,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { FilesService } from './files.service';
 
 @Controller('files')
 export class FilesController {

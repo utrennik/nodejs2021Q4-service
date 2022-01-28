@@ -1,3 +1,4 @@
+/* eslint-disable node/no-unsupported-features/node-builtins */
 import {
   Injectable,
   InternalServerErrorException,

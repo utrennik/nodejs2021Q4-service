@@ -5,7 +5,7 @@ import {
   InternalServerErrorException,
   NotFoundException,
 } from '@nestjs/common';
-import getRepo from '../common/getrepo';
+import { InjectRepository } from '@nestjs/typeorm';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import User from './entities/user.entity';
@@ -14,11 +14,10 @@ import encryptPass from '../auth/encrypt-pass';
 
 @Injectable()
 export class UsersService {
-  public repo: Repository<User>;
-
-  constructor() {
-    this.repo = getRepo(User);
-  }
+  constructor(
+    @InjectRepository(User)
+    private repo: Repository<User>,
+  ) {}
 
   /**
    * Adds a User to repository

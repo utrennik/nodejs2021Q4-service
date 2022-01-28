@@ -12,15 +12,14 @@ function getMigrationDirectory() {
   return `${directory}/migrations/**/*{.ts,.js}`;
 }
 
-const ormConfig = {
+const typeOrmConfig = {
   type: 'postgres',
-  name: 'postgres-app-connection',
   synchronize: true,
   host: process.env.POSTGRES_HOST,
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
-  port: process.env.POSTGRES_PORT,
+  port: parseInt(process.env.POSTGRES_PORT, 10),
   autoReconnect: true,
   entities: [`${path.join(__dirname, '../**', '*.entity.{ts,js}')}`],
   migrations: [getMigrationDirectory()],
@@ -29,4 +28,4 @@ const ormConfig = {
   },
 };
 
-export default ormConfig as ConnectionOptions;
+export default typeOrmConfig as ConnectionOptions;

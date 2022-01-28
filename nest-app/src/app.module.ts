@@ -1,4 +1,5 @@
 import { Module, Logger, MiddlewareConsumer } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { LoggerMiddleware } from './logger/logger.middleware';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -7,9 +8,20 @@ import { TasksModule } from './tasks/tasks.module';
 import { BoardsModule } from './boards/boards.module';
 import { LoginModule } from './login/login.module';
 import { FilesModule } from './files/files.module';
+import typeOrmConfig from './common/typeormconfig';
 
 @Module({
-  imports: [UsersModule, TasksModule, BoardsModule, LoginModule, FilesModule],
+  imports: [
+    TypeOrmModule.forRoot({
+      ...typeOrmConfig,
+      autoLoadEntities: true,
+    }),
+    UsersModule,
+    LoginModule,
+    TasksModule,
+    BoardsModule,
+    FilesModule,
+  ],
   controllers: [AppController],
   providers: [AppService, Logger],
 })

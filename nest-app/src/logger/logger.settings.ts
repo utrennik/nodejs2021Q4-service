@@ -16,6 +16,7 @@ const loggerSettings = {
       level: 'error',
     }),
     new winston.transports.File({ filename: config.COMMON_LOG_FILE }),
+    new winston.transports.Console({ level: 'info' }),
   ],
 };
 

@@ -1,17 +1,16 @@
 import { Repository } from 'typeorm';
 import { Injectable, NotFoundException } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
 import Task from './entities/task.entity';
-import getRepo from '../common/getrepo';
 
 @Injectable()
 export class TasksService {
-  public repo: Repository<Task>;
-
-  constructor() {
-    this.repo = getRepo(Task);
-  }
+  constructor(
+    @InjectRepository(Task)
+    private repo: Repository<Task>,
+  ) {}
 
   /**
    * Adds a new Task

@@ -4,7 +4,7 @@ import {
   InternalServerErrorException,
   NotFoundException,
 } from '@nestjs/common';
-import getRepo from '../common/getrepo';
+import { InjectRepository } from '@nestjs/typeorm';
 import { CreateBoardDto } from './dto/create-board.dto';
 import { UpdateBoardDto } from './dto/update-board.dto';
 import Board from './entities/board.entity';
@@ -13,11 +13,10 @@ import Board from './entities/board.entity';
 export class BoardsService {
   private BOARD_RELATIONS = { relations: ['columns'] };
 
-  public repo: Repository<Board>;
-
-  constructor() {
-    this.repo = getRepo(Board);
-  }
+  constructor(
+    @InjectRepository(Board)
+    private repo: Repository<Board>,
+  ) {}
 
   /**
    * Adds a Board to repository
@@ -65,8 +64,6 @@ export class BoardsService {
    */
   async update(id: string, updateBoardDto: UpdateBoardDto): Promise<Board> {
     const board = this.repo.findOne(id);
-
-    console.log(JSON.stringify(board));
 
     if (!board) throw new NotFoundException('Board not found!');
 
