@@ -14,7 +14,8 @@ export class TasksService {
 
   /**
    * Adds a new Task
-   * @param task Task data object
+   * @param boardId board id for the task
+   * @param createTaskDto Create Task dto
    * @returns created Task (Promise)
    */
   async create(boardId: string, createTaskDto: CreateTaskDto): Promise<Task> {

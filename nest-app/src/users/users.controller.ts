@@ -15,7 +15,7 @@ import { UsersService } from './users.service';
 import { TasksService } from '../tasks/tasks.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { AuthGuard } from "../auth/auth.guard";
+import { AuthGuard } from '../auth/auth.guard';
 
 @Controller('users')
 @UseGuards(AuthGuard)

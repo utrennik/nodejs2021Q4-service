@@ -12,7 +12,7 @@ import { ValidationPipe } from '../common/validation.pipe';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
-import { AuthGuard } from "../auth/auth.guard";
+import { AuthGuard } from '../auth/auth.guard';
 
 @Controller('boards')
 @UseGuards(AuthGuard)

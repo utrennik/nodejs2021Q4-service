@@ -22,7 +22,8 @@ export class UsersService {
   /**
    * Adds a User to repository
    * @param createUserDto CreateUserDto
-   * @returns added User (Promise)
+   * @returns UpdateUserReturnDto (promise)
+   * @throws BadRequestException if user with same login exists
    */
   async create(createUserDto: CreateUserDto): Promise<UpdateUserReturnDto> {
     const { login } = createUserDto;
@@ -63,7 +64,8 @@ export class UsersService {
   /**
    * Returns the User by User id
    * @param id User id
-   * @returns User with given id (Promise) or null if not found
+   * @returns User with given id (Promise)
+   * @throws NotFoundException if User is not found
    */
   async findOne(id: string): Promise<User> {
     const resultUser: User | undefined = await this.repo.findOne(id);
@@ -78,7 +80,8 @@ export class UsersService {
    * Updates a User by id
    * @param id id of the User to get updated
    * @param updateUserDto data to update User
-   * @returns updated User or null if not found (Promise)
+   * @returns UpdateUserReturnDto
+   * @throws NotFoundException if User not found or InternalServerErrorException if error while updating
    */
   async update(
     id: string,
@@ -89,7 +92,12 @@ export class UsersService {
     if (!resultUser)
       throw new NotFoundException(`User with id:${id} not found`);
 
-    await this.repo.update(id, updateUserDto);
+    if (updateUserDto.password) {
+      const encryptedPass = await encryptPass(updateUserDto.password);
+      await this.repo.update(id, { ...updateUserDto, password: encryptedPass });
+    } else {
+      await this.repo.update(id, updateUserDto);
+    }
 
     const updatedUser = await this.repo.findOne(id);
 
@@ -100,13 +108,18 @@ export class UsersService {
 
     const userDataToReturn = new UpdateUserReturnDto({ ...updatedUser });
 
+    console.warn(
+      `FOR CROSSCHECK! Updated user data: ${JSON.stringify(updatedUser)}`,
+    );
+
     return userDataToReturn;
   }
 
   /**
    * Removes a User from the repository
    * @param id id of the User to be deleted
-   * @returns true if the User is deleted or false if not found (Promise)
+   * @returns void (Promise)
+   * @throws NotFoundException is the User is not found or InternalServerErrorException if error while deleting
    */
   async remove(id: string): Promise<void> {
     const resultUser: User | undefined = await this.repo.findOne(id);
