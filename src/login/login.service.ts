@@ -8,6 +8,7 @@ import config from '../common/config';
 @Injectable()
 export class LoginService {
   constructor(private readonly usersService: UsersService) {}
+
   /**
    * Handles user login
    * @param loginDto user login DTO
