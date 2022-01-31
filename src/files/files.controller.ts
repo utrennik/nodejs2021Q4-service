@@ -7,8 +7,10 @@ import {
   UseInterceptors,
   UploadedFile,
   StreamableFile,
+  UseGuards,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { AuthGuard } from '../auth/auth.guard';
 import { FilesService } from './files.service';
 
 @Controller('files')
@@ -16,6 +18,7 @@ export class FilesController {
   constructor(private readonly filesService: FilesService) {}
 
   @UseInterceptors(FileInterceptor('file'))
+  @UseGuards(AuthGuard)
   @Post()
   async uploadFile(@UploadedFile() file: Express.Multer.File) {
     const { originalname, filename } = file;
