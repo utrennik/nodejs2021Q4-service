@@ -26,6 +26,7 @@
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "@nestjs/platform-fastify": "^8.2.6",
     "@nestjs/typeorm": "^8.0.3",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
