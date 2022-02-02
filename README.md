@@ -41,15 +41,21 @@ $ npm run test:auth
 ```
 
 ## Authorization
-This application uses Bearer JWT token authentication for authentication to all routes besides `/` and `doc`.
+This application uses Bearer JWT token authentication for authentication to all routes besides `/`, `api` and `/files` (GET method).
 
 To get the JWT token you must send the login and password in http request to `/login`.
 
 ## Usage
 
+## Swagger is available at `/api`
+
+- `Files` (`/files` route)
+  - `GET /files/:fileNamw` - get the file by fileName (ex. “/files/log.txt”)
+  - `POST /file` - upload file (the file should be sent as multipart/formdata, with 'file' key in request body)
+  - `DELETE /files/:fileName` - delete file by fileName
 - `User` (`/users` route)
-  - `GET /users` - get all users (remove password from response)
-  - `GET /users/:userId` - get the user by id (ex. “/users/123”) (remove password from response)
+  - `GET /users` - get all users
+  - `GET /users/:userId` - get the user by id (ex. “/users/123”)
   - `POST /users` - create user
   - `PUT /users/:userId` - update user
   - `DELETE /users/:userId` - delete user
