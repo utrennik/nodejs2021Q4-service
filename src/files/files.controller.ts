@@ -21,8 +21,8 @@ export class FilesController {
   @UseGuards(AuthGuard)
   @Post()
   async uploadFile(@UploadedFile() file: Express.Multer.File) {
-    const { originalname, filename } = file;
-    return `File "${originalname}" uploaded to server. Saved as ${filename}`;
+    const { filename } = file;
+    return `File "${filename}" uploaded to server.`;
   }
 
   @Get(':name')

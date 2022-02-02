@@ -1,22 +1,26 @@
 import { WinstonModule } from 'nest-winston';
+import fmp from 'fastify-multipart';
 import { NestFactory } from '@nestjs/core';
-import { HttpExceptionFilter } from './exceptions/http-exception.filter';
 import {
   FastifyAdapter,
   NestFastifyApplication,
 } from '@nestjs/platform-fastify';
-import loggerSettings from './logger/logger.settings';
 import { INestApplication } from '@nestjs/common';
+import { HttpExceptionFilter } from './exceptions/http-exception.filter';
+import loggerSettings from './logger/logger.settings';
 import { AppModule } from './app.module';
 import config from './common/config';
 
 async function bootstrap() {
   let app: NestFastifyApplication | INestApplication;
 
-  if (config.USE_FASTIFY) {
+  if (config.USE_FASTIFY === 'true') {
+    const fastifyAdapter = new FastifyAdapter();
+    fastifyAdapter.register(fmp);
+
     app = await NestFactory.create<NestFastifyApplication>(
       AppModule,
-      new FastifyAdapter(),
+      fastifyAdapter,
       {
         logger: WinstonModule.createLogger(loggerSettings),
       },

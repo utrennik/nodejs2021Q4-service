@@ -1,0 +1,57 @@
+config:
+  target: 'http://localhost:4001'
+  phases:
+    - duration: 10
+      arrivalRate: 5
+      rampTo: 50
+      name: Ramp up load
+
+before:
+  flow:
+    - log: 'Get auth token'
+    - post:
+        url: '/login'
+        json:
+          login: 'admin'
+          password: 'admin'
+        capture:
+          - json: $.token
+            as: token
+
+scenarios:
+  - name: 'test /boards'
+    flow:
+      - post:
+          url: '/boards'
+          headers:
+            Content-Type: 'application/json'
+            authorization: 'Bearer {{ token }}'
+          json:
+            title: 'My board'
+            columns: []
+          capture:
+            - json: '$.id'
+              as: 'boardId'
+
+      - get:
+          url: '/boards/{{ boardId }}'
+          headers:
+            authorization: 'Bearer {{ token }}'
+
+      - put:
+          url: '/boards/{{ boardId }}'
+          headers:
+            authorization: 'Bearer {{ token }}'
+          json:
+            title: 'My updated board'
+            columns: []
+
+      - get:
+          url: '/boards'
+          headers:
+            authorization: 'Bearer {{ token }}'
+
+      - delete:
+          url: '/boards/{{ boardId }}'
+          headers:
+            authorization: 'Bearer {{ token }}'

@@ -5,6 +5,7 @@ import { MulterModule } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { FilesService } from './files.service';
 import { FilesController } from './files.controller';
+import { FilesControllerFastify } from './files.controller.fastify';
 import config from '../common/config';
 
 @Module({
@@ -20,7 +21,9 @@ import config from '../common/config';
       }),
     }),
   ],
-  controllers: [FilesController],
+  controllers: [
+    config.USE_FASTIFY === 'true' ? FilesControllerFastify : FilesController,
+  ],
   providers: [FilesService],
 })
 export class FilesModule {}

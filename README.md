@@ -5,26 +5,21 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+NodeJS2021Q4 service
+
+## Prerequisites
+
+- Git - [Download & Install Git](https://git-scm.com/downloads).
+- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager.
+- Docker = [Download & Install Docker](https://docs.docker.com/desktop/).
+
+## Downloading
+
+```bash
+git clone -b nest-app {repository URL}
+```
 
 ## Installation
 
@@ -35,39 +30,92 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ docker compose up --build
 ```
 
 ## Test
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+# tests with authorization
+$ npm run test:auth
 ```
 
-## Support
+## Authorization
+This application uses Bearer JWT token authentication for authentication to all routes besides `/` and `doc`.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+To get the JWT token you must send the login and password in http request to `/login`.
 
-## Stay in touch
+## Usage
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- `User` (`/users` route)
+  - `GET /users` - get all users (remove password from response)
+  - `GET /users/:userId` - get the user by id (ex. “/users/123”) (remove password from response)
+  - `POST /users` - create user
+  - `PUT /users/:userId` - update user
+  - `DELETE /users/:userId` - delete user
+- `Board` (`/boards` route)
+  - `GET /boards` - get all boards
+  - `GET /boards/:boardId` - get the board by id
+  - `POST /boards` - create board
+  - `PUT /boards/:boardId` - update board
+  - `DELETE /boards/:boardId` - delete board
+- `Task` (`boards/:boardId/tasks` route)
+  - `GET boards/:boardId/tasks` - get all tasks
+  - `GET boards/:boardId/tasks/:taskId` - get the task by id
+  - `POST boards/:boardId/tasks` - create task
+  - `PUT boards/:boardId/tasks/:taskId` - update task
+  - `DELETE boards/:boardId/tasks/:taskId` - delete task
 
-## License
+##
 
-Nest is [MIT licensed](LICENSE).
+# Performance comparsion
+
+## Express
+
+|                    |         |
+| ------------------ | ------- |
+| http.codes.200:    | 928     |
+| http.codes.201:    | 232     |
+| http.request_rate: | 106/sec |
+| http.requests:     | 1160    |
+| http.response_time:
+| min: | 1
+| max: | 207
+| median: | 10.1
+| p95: | 44.3
+| p99: | 94.6
+| http.responses: | 1160
+| vusers.completed: | 232
+| vusers.created: | 232
+| vusers.created_by_name.test /boards: | 232
+| vusers.session_length:
+| min: | 20.9
+| max: | 374.6
+| median: | 71.5
+| p95: | 194.4
+| p99: | 347.3
+
+## Fastify
+
+|                    |        |
+| ------------------ | ------ |
+| http.codes.200:    | 864    |
+| http.codes.201:    | 216    |
+| http.request_rate: | 98/sec |
+| http.requests:     | 1080   |
+| http.response_time:
+| min: | 1
+| max: | 115
+| median: | 7
+| p95: | 21.1
+| p99: | 55.2
+| http.responses: | 1080
+| vusers.completed: | 216
+| vusers.created: | 216
+| vusers.created_by_name.test /boards: | 216
+| vusers.session_length:
+| min: | 19.2
+| max: | 241.9
+| median: | 47
+| p95: | 106.7
+| p99: | 183.1
