@@ -47,4 +47,19 @@ app.register(usersRouter, { prefix: '/users' });
 app.register(boardsRouter, { prefix: '/boards' });
 app.register(tasksRouter, { prefix: '/boards' });
 
+// TODO: check here DB container connectivity
+
+// const { poolConfing } = config;
+
+// const pool = new Pool(poolConfing);
+
+// pool
+//   .connect()
+//   .then(() => {
+//     console.log('DB client connected');
+//   })
+//   .catch((e) => {
+//     console.log(`DB NOT CONNECTED: ${e}`);
+//   });
+
 export default app;

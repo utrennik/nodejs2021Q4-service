@@ -24,6 +24,11 @@ docker compose up
 
 ```
 npm i
+=======
+## To start app locally:
+
+```
+npm start
 ```
 
 ## Testing
