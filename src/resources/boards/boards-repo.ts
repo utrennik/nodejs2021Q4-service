@@ -1,13 +1,21 @@
 import { IBoardData } from './types';
 import Board from './board-model';
+import BoardEntity from '../../entities/board-entity';
+import getRepo from '../../common/getrepo';
 
-const boards: Board[] = [];
+const BOARD_RELATIONS = { relations: ['columns'] };
 
 /**
  * Returns all Boards in the repo (Promise)
  * @returns All Boards (Promise)
  */
-const getAllBoards = async (): Promise<Board[]> => boards;
+const getAllBoards = async (): Promise<Board[]> => {
+  const repo = getRepo(BoardEntity);
+
+  const boards = await repo.find(BOARD_RELATIONS);
+
+  return boards;
+};
 
 /**
  * Returns the Board by Board id
@@ -15,9 +23,10 @@ const getAllBoards = async (): Promise<Board[]> => boards;
  * @returns Board or null if not found (Promise)
  */
 const getBoardByID = async (id: string): Promise<Board | null> => {
-  const resultBoard: Board | undefined = boards.find(
-    (board) => board.id === id
-  );
+  const repo = getRepo(BoardEntity);
+
+  const resultBoard = await repo.findOne(id, BOARD_RELATIONS);
+
   return resultBoard || null;
 };
 
@@ -27,7 +36,10 @@ const getBoardByID = async (id: string): Promise<Board | null> => {
  * @returns added board (Promise)
  */
 const postBoard = async (board: Board): Promise<Board> => {
-  boards.push(board);
+  const repo = getRepo(BoardEntity);
+
+  await repo.save(board);
+
   return board;
 };
 
@@ -41,22 +53,24 @@ const updateBoard = async (
   id: string,
   newBoardData: IBoardData
 ): Promise<Board | null> => {
-  let boardIndex: number | undefined;
+  const repo = getRepo(BoardEntity);
 
-  const oldBoardData: Board | undefined = boards.find((board, i) => {
-    if (board.id === id) {
-      boardIndex = i;
-      return true;
-    }
-    return false;
-  });
+  const resultBoard = await repo.findOne(id);
 
-  if (boardIndex !== undefined && oldBoardData) {
-    boards[boardIndex] = { ...oldBoardData, ...newBoardData };
-    return boards[boardIndex];
+  if (!resultBoard) return null;
+
+  const updatedBoard = { ...resultBoard, ...newBoardData };
+
+  let savedBoard;
+
+  try {
+    await repo.save(updatedBoard);
+    savedBoard = await repo.findOne(id, BOARD_RELATIONS);
+  } catch (e) {
+    console.error(`FAILED TO UPDATE BOARD: ${e}`);
   }
 
-  return null;
+  return savedBoard || null;
 };
 
 /**
@@ -65,13 +79,11 @@ const updateBoard = async (
  * @returns true if the board is deleted or false if not found (Promise)
  */
 const deleteBoard = async (id: string): Promise<boolean> => {
-  const boardIndex: number = boards.findIndex((board) => board.id === id);
+  const repo = getRepo(BoardEntity);
 
-  if (boardIndex !== -1) {
-    boards.splice(boardIndex, 1);
-    return true;
-  }
-  return false;
+  const deleteResult = await repo.delete(id);
+
+  return !!deleteResult.affected;
 };
 
 export default {

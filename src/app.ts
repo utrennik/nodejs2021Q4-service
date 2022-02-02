@@ -1,6 +1,5 @@
 import path from 'path';
 import { fastify, FastifyReply, FastifyRequest, FastifyError } from 'fastify';
-// import { Client, Pool } from 'pg';
 import usersRouter from './resources/users/users-router';
 import boardsRouter from './resources/boards/boards-router';
 import tasksRouter from './resources/tasks/tasks-router';

@@ -1,16 +1,19 @@
 import * as uuid from 'uuid';
-import Task from '../tasks/tasks-model';
 
 export default class Column {
   id: string;
 
   title: string;
 
-  tasks: Task[];
+  order: number | null;
 
-  constructor({ id = uuid.v4(), title = 'My Column', tasks = [] } = {}) {
+  constructor({
+    id = uuid.v4(),
+    title = 'My Column',
+    order = null as number | null,
+  } = {}) {
     this.id = id;
     this.title = title;
-    this.tasks = tasks;
+    this.order = order;
   }
 }

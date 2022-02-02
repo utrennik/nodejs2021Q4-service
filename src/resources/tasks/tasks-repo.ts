@@ -1,7 +1,7 @@
 import { ITaskData } from './types';
 import Task from './tasks-model';
-
-let tasks: Task[] = [];
+import TaskEntity from '../../entities/task-entity';
+import getRepo from '../../common/getrepo';
 
 /**
  * Returns the Tasks by Board id
@@ -9,7 +9,9 @@ let tasks: Task[] = [];
  * @returns Array of Tasks or null if there are no Tasks (Promise)
  */
 const getTasksByBoardId = async (id: string): Promise<Task[] | null> => {
-  const resultTasks: Task[] = tasks.filter((task) => task.boardId === id);
+  const repo = getRepo(TaskEntity);
+
+  const resultTasks: Task[] = await repo.find({ boardId: id });
 
   return resultTasks.length === 0 ? null : resultTasks;
 };
@@ -19,9 +21,12 @@ const getTasksByBoardId = async (id: string): Promise<Task[] | null> => {
  * @param id Task id
  * @returns void (Promise)
  */
-const deleteTasksByBoardId = async (id: string): Promise<void> => {
-  const newTasks: Task[] = tasks.filter((task) => task.boardId !== id);
-  tasks = newTasks;
+const deleteTasksByBoardId = async (id: string): Promise<boolean> => {
+  const repo = getRepo(TaskEntity);
+
+  const deleteResult = await repo.delete({ boardId: id });
+
+  return !!deleteResult.affected;
 };
 
 /**
@@ -30,12 +35,9 @@ const deleteTasksByBoardId = async (id: string): Promise<void> => {
  * @returns void (Promise)
  */
 const unassignTasks = async (userId: string): Promise<void> => {
-  const newTasks: Task[] = tasks.map((task) => {
-    if (task.userId === userId) return { ...task, userId: null };
-    return task;
-  });
+  const repo = getRepo(TaskEntity);
 
-  tasks = newTasks;
+  await repo.update({ userId }, { userId: null });
 };
 
 /**
@@ -48,9 +50,9 @@ const getTask = async (
   boardId: string,
   taskId: string
 ): Promise<Task | null> => {
-  const resultTask: Task | undefined = tasks.find(
-    (task) => task.boardId === boardId && task.id === taskId
-  );
+  const repo = getRepo(TaskEntity);
+
+  const resultTask = await repo.findOne({ boardId, id: taskId });
 
   return resultTask || null;
 };
@@ -61,7 +63,11 @@ const getTask = async (
  * @returns created Task (Promise)
  */
 const postTask = async (task: Task): Promise<Task> => {
-  tasks.push(task);
+  const repo = getRepo(TaskEntity);
+
+  const newTask = await repo.create(task);
+
+  await repo.save(newTask);
 
   return task;
 };
@@ -77,23 +83,21 @@ const updateTask = async (
   boardId: string,
   taskId: string,
   newTaskData: ITaskData
-) => {
-  let taskIndex: number | undefined;
+): Promise<Task | null> => {
+  const repo = getRepo(TaskEntity);
 
-  const oldTaskData: Task | undefined = tasks.find((task, i) => {
-    if (task.id === taskId && task.boardId === boardId) {
-      taskIndex = i;
-      return true;
-    }
-    return false;
+  const resultTask: Task | undefined = await repo.findOne({
+    boardId,
+    id: taskId,
   });
 
-  if (taskIndex !== undefined && oldTaskData) {
-    tasks[taskIndex] = { ...oldTaskData, ...newTaskData };
-    return tasks[taskIndex];
-  }
+  if (!resultTask) return null;
 
-  return null;
+  await repo.update(resultTask.id, newTaskData);
+
+  const updatedTask = await repo.findOne({ boardId, id: taskId });
+
+  return updatedTask || null;
 };
 
 /**
@@ -106,14 +110,11 @@ const deleteTask = async (
   boardId: string,
   taskId: string
 ): Promise<boolean> => {
-  const taskIndex: number = tasks.findIndex(
-    (task) => task.id === taskId && task.boardId === boardId
-  );
-  if (taskIndex !== -1) {
-    tasks.splice(taskIndex, 1);
-    return true;
-  }
-  return false;
+  const repo = getRepo(TaskEntity);
+
+  const deleteResult = await repo.delete({ boardId, id: taskId });
+
+  return !!deleteResult.affected;
 };
 
 export default {
