@@ -55,10 +55,14 @@ export class UsersService {
    * Returns all Users in the repo (Promise)
    * @returns All Users (Promise)
    */
-  async findAll(): Promise<User[]> {
+  async findAll(): Promise<UpdateUserReturnDto[]> {
     const users = await this.repo.find({ where: {} });
 
-    return users;
+    const usersToReturn = users.map(
+      (user) => new UpdateUserReturnDto({ ...user }),
+    );
+
+    return usersToReturn;
   }
 
   /**
@@ -67,13 +71,15 @@ export class UsersService {
    * @returns User with given id (Promise)
    * @throws NotFoundException if User is not found
    */
-  async findOne(id: string): Promise<User> {
+  async findOne(id: string): Promise<UpdateUserReturnDto> {
     const resultUser: User | undefined = await this.repo.findOne(id);
 
     if (!resultUser)
       throw new NotFoundException(`User with id:${id} not found`);
 
-    return resultUser;
+    const userToReturn = new UpdateUserReturnDto({ ...resultUser });
+
+    return userToReturn;
   }
 
   /**

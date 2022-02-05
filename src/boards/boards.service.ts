@@ -63,11 +63,11 @@ export class BoardsService {
    * @throws NotFoundException if Board is not found
    */
   async update(id: string, updateBoardDto: UpdateBoardDto): Promise<Board> {
-    const board = this.repo.findOne(id);
+    const board = await this.repo.findOne(id);
 
     if (!board) throw new NotFoundException('Board not found!');
 
-    const updatedBoard = { ...board, ...updateBoardDto };
+    const updatedBoard = this.repo.merge(board, updateBoardDto);
 
     await this.repo.save(updatedBoard);
 
