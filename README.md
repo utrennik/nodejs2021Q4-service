@@ -51,7 +51,7 @@ To get the JWT token you must send the login and password in http request to `/l
 
 - `Files` (`/files` route)
   - `GET /files/:fileNamw` - get the file by fileName (ex. “/files/log.txt”)
-  - `POST /file` - upload file (the file should be sent as multipart/formdata, with 'file' key in request body)
+  - `POST /files` - upload file (the file should be sent as multipart/formdata, with 'file' key in request body)
   - `DELETE /files/:fileName` - delete file by fileName
 - `User` (`/users` route)
   - `GET /users` - get all users
